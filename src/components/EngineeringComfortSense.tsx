@@ -103,7 +103,7 @@ const EngineeringComfortSense: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src="/comfortsense-photo.png"
+                                            src={`${import.meta.env.BASE_URL}comfortsense-photo.png`}
                                             alt="ComfortSense Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />
