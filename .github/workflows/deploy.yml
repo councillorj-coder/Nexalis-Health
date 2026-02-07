@@ -30,8 +30,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Set this to /<repo-name>/ for GitHub Pages (e.g. /Nexalis_Health/)
-          VITE_BASE: /Nexalis_Health/
+          # Set this to /<repo-name>/ for GitHub Pages
+          VITE_BASE: /Nexalis-Health/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
