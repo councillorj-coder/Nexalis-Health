@@ -78,7 +78,7 @@ const EngineeringRigiSense: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}rigisense-product.png`}
+                                            src="/rigisense-product.png"
                                             alt="RigiSense Product"
                                             className="max-w-full h-auto opacity-90 drop-shadow-[0_0_30px_rgba(16,185,129,0.1)]"
                                         />

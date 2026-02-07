@@ -208,7 +208,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                         {/* Male Wireframe Image (Left) */}
                         <div className="absolute left-0 md:left-12 top-1/2 -translate-y-1/2 opacity-70">
                             <img
-                                src={`${import.meta.env.BASE_URL}wireframe-male.png`}
+                                src="/wireframe-male.png"
                                 alt="Male System"
                                 className="h-[350px] w-auto object-contain"
                                 style={{
@@ -226,7 +226,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                         {/* Female Wireframe Image (Right) */}
                         <div className="absolute right-0 md:right-12 top-1/2 -translate-y-1/2 opacity-70">
                             <img
-                                src={`${import.meta.env.BASE_URL}wireframe-female.png`}
+                                src="/wireframe-female.png"
                                 alt="Female System"
                                 className="h-[350px] w-auto object-contain"
                                 style={{
@@ -305,7 +305,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             <g>
                                 {/* Male Heart */}
                                 <image
-                                    href={`${import.meta.env.BASE_URL}human-heart-wireframe.png`}
+                                    href="/human-heart-wireframe.png"
                                     x="113"
                                     y="128"
                                     width="24"
@@ -319,7 +319,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                                 {/* Female Heart */}
                                 <image
-                                    href={`${import.meta.env.BASE_URL}human-heart-wireframe.png`}
+                                    href="/human-heart-wireframe.png"
                                     x="663"
                                     y="128"
                                     width="24"
@@ -354,7 +354,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             Node 1. RigiSense™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}rigisense-wireframe.png`}
+                                            href="/rigisense-wireframe.png"
                                             x="-48"
                                             y="158"
                                             width="96"
@@ -384,7 +384,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             Node 4. FitSense™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}fitsense-wireframe.png`}
+                                            href="/fitsense-wireframe.png"
                                             x="-48"
                                             y="258"
                                             width="96"
@@ -414,7 +414,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             Node 5. AXIS™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}axis-wireframe.png`}
+                                            href="/axis-wireframe.png"
                                             x="-48"
                                             y="58"
                                             width="96"
@@ -447,7 +447,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             Node 2. InnerSense™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}innersense-wireframe.png`}
+                                            href="/innersense-wireframe.png"
                                             x="755"
                                             y="159"
                                             width="90"
@@ -477,7 +477,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             Node 3. ComfortSense™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}comfortsense-wireframe.png`}
+                                            href="/comfortsense-wireframe.png"
                                             x="752"
                                             y="258"
                                             width="96"
@@ -507,7 +507,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             Node 5. AXIS™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}axis-wireframe.png`}
+                                            href="/axis-wireframe.png"
                                             x="752"
                                             y="58"
                                             width="96"

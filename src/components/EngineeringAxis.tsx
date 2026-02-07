@@ -79,7 +79,7 @@ const EngineeringAxis: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}axis-realistic.png?v=2`}
+                                            src="/axis-realistic.png?v=2"
                                             alt="Axis Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />

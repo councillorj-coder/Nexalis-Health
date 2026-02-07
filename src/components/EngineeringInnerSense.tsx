@@ -79,7 +79,7 @@ const EngineeringInnerSense: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}innersense-realism.png?v=4`}
+                                            src="/innersense-realism.png?v=4"
                                             alt="InnerSense Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />

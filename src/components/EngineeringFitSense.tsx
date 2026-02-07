@@ -83,7 +83,7 @@ const EngineeringFitSense: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}fitsense-photo.png`}
+                                            src="/fitsense-photo.png"
                                             alt="FitSense Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />
