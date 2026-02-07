@@ -71,7 +71,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                 {/* Bottom Status decoration */}
                 <div className="mt-auto flex flex-col items-center gap-2 opacity-30">
                     <div className="w-px h-8 bg-gradient-to-b from-transparent via-white to-transparent" />
-                    <span className="text-[8px] uppercase tracking-widest writing-vertical-lr text-white/50">SYS • V.02</span>
+                    <span className="text-[9px] uppercase tracking-widest text-white/40">SYS • V.02</span>
                 </div>
             </aside>
 
@@ -89,7 +89,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             <div className="relative z-10">
                                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-4">
                                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-                                    <span className="text-[10px] font-bold uppercase tracking-widest text-blue-300">{activeNodeData.formFactor}</span>
+                                    <span className="text-xs font-bold uppercase tracking-wider text-blue-300">{activeNodeData.formFactor}</span>
                                 </div>
                                 <h2 className="text-4xl font-black text-white tracking-tighter mb-2 leading-[0.9]">{activeNodeData.name}™</h2>
                                 <p className="text-sm text-blue-400 font-medium">{activeNodeData.tagline}</p>
@@ -109,7 +109,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* Why This Exists */}
                             <div className="space-y-3 p-5 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5">
-                                <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">Why This Exists</h3>
+                                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">Why This Exists</h3>
                                 <p className="text-sm text-slate-300 leading-relaxed">
                                     {activeNodeData.purpose}
                                 </p>
@@ -117,7 +117,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* What It Measures */}
                             <div className="space-y-4">
-                                <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">What It Measures</h3>
+                                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">What It Measures</h3>
                                 <div className="grid grid-cols-1 gap-2">
                                     {activeNodeData.keyMeasurements.map((measurement, i) => (
                                         <div key={i} className="flex items-center gap-3 p-3 bg-white/[0.02] rounded-lg border border-white/5 hover:border-blue-500/20 transition-colors">
@@ -130,7 +130,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* Consumer Outputs */}
                             <div className="space-y-4">
-                                <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">What You'll See</h3>
+                                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">What You'll See</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {activeNodeData.outputs.map((output, i) => (
                                         <div key={i} className="px-3 py-2 bg-blue-500/10 border border-blue-500/20 rounded-lg text-xs font-medium text-blue-300">
@@ -142,7 +142,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* Architecture Domains */}
                             <div className="space-y-4">
-                                <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">Core Domains</h3>
+                                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">Core Domains</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {activeNodeData.domains.map((domain, i) => (
                                         <div key={domain}
@@ -179,7 +179,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                 {/* Navigation (Top Right only now) */}
                 <nav className="fixed top-0 right-0 z-50 p-6 flex justify-end items-center">
-                    <span className="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 bg-black/50 backdrop-blur px-4 py-2 rounded-full border border-white/5">
+                    <span className="text-sm font-medium uppercase tracking-widest text-slate-400 bg-black/50 backdrop-blur px-4 py-2 rounded-full border border-white/10">
                         System Interface
                     </span>
                 </nav>
@@ -200,7 +200,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             <span className="text-white/90">THE NEXALIS</span><br />
                             <span className="text-white/40">SYSTEM</span>
                         </h1>
-                        <p className="text-sm uppercase tracking-[0.4em] text-slate-500">Physiological Intelligence Architecture</p>
+                        <p className="text-sm uppercase tracking-widest text-slate-400">Continuous Health Intelligence</p>
                     </div>
 
                     {/* Animated Hero Visual */}
@@ -856,15 +856,15 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             </defs>
 
                             {/* Labels */}
-                            <text x="120" y="350" textAnchor="middle" className="fill-slate-500 text-[10px] uppercase tracking-widest">Male System</text>
-                            <text x="680" y="350" textAnchor="middle" className="fill-slate-500 text-[10px] uppercase tracking-widest">Female System</text>
-                            <text x="400" y="300" textAnchor="middle" className="fill-slate-400 text-[11px] uppercase tracking-widest">NEXALIS SYNTHESIS ENGINE (AI)</text>
+                            <text x="120" y="350" textAnchor="middle" className="fill-slate-400 text-xs uppercase tracking-wider">Male System</text>
+                            <text x="680" y="350" textAnchor="middle" className="fill-slate-400 text-xs uppercase tracking-wider">Female System</text>
+                            <text x="400" y="300" textAnchor="middle" className="fill-slate-300 text-sm font-medium">Nexalis AI Engine</text>
                         </svg>
                     </div>
 
                     {/* Scroll Indicator */}
                     <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-                        <span className="text-[10px] uppercase tracking-widest text-slate-500">Scroll to explore</span>
+                        <span className="text-xs uppercase tracking-wider text-slate-400">Scroll to explore</span>
                         <div className="w-px h-8 bg-gradient-to-b from-slate-500 to-transparent animate-pulse" />
                     </div>
                 </section >
@@ -875,15 +875,13 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                         <h2 className="text-4xl font-black tracking-tight">Nexalis System Overview</h2>
                         <div className="space-y-6 text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto">
                             <p>
-                                Nexalis is a distributed intimate-health intelligence system built to capture what has never been measurable at scale:
-                                how intimate physiology behaves across daily life, not just during exams or isolated moments.
+                                Nexalis is a health monitoring system designed to track intimate wellness over time—not just during doctor visits, but throughout your daily life.
                             </p>
                             <p className="text-blue-400 font-medium">
-                                The system replaces snapshots with continuity.
+                                Instead of snapshots, you get a complete picture.
                             </p>
                             <p className="text-base text-slate-400">
-                                Purpose-built sensing nodes quietly collect real-world data over hours, days, and weeks—establishing personal baselines,
-                                detecting subtle change, and revealing patterns that are invisible to conventional care.
+                                Small, comfortable sensors collect data over hours, days, and weeks. They learn what's normal for you, spot changes early, and reveal patterns that traditional checkups miss.
                             </p>
                         </div>
                     </div>
@@ -897,13 +895,12 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                         <div className="space-y-8">
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-px bg-gradient-to-r from-transparent to-blue-500/50" />
-                                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-500">01</h3>
+                                <h3 className="text-sm font-bold text-slate-400">01</h3>
                             </div>
                             <div className="space-y-6 max-w-3xl">
                                 <h2 className="text-5xl font-black">Shared Intelligence</h2>
                                 <p className="text-xl text-slate-300 leading-relaxed">
-                                    All signals converge into a shared intelligence layer that abstracts raw physiology into stable,
-                                    non-explicit insights around structure, circulation, stability, and recovery.
+                                    All sensor data flows into an AI layer that turns raw signals into simple, useful insights about your health patterns and trends.
                                 </p>
                             </div>
                         </div>
@@ -912,11 +909,11 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                         <div className="space-y-12">
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-px bg-gradient-to-r from-transparent to-blue-500/50" />
-                                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-500">02</h3>
+                                <h3 className="text-sm font-bold text-slate-400">02</h3>
                             </div>
                             <div className="space-y-4">
                                 <h2 className="text-5xl font-black">Sensing Nodes</h2>
-                                <p className="text-slate-400 text-lg">Each node is specialized, minimal, and designed to disappear into daily life.</p>
+                                <p className="text-slate-400 text-lg">Each sensor is designed to be comfortable, discreet, and easy to use in everyday life.</p>
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -924,9 +921,9 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <div className="p-8 border border-white/10 bg-white/[0.02] space-y-4 hover:border-blue-500/30 transition-colors">
                                     <div className="flex items-center justify-between">
                                         <h3 className="text-xl font-bold text-white">RigiSense™</h3>
-                                        <span className="text-[10px] text-blue-500 font-black uppercase tracking-widest">Active</span>
+                                        <span className="text-xs text-blue-500 font-bold uppercase tracking-wider">Active</span>
                                     </div>
-                                    <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Structural & Stability Node (Male)</p>
+                                    <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Structural & Stability Sensor (Male)</p>
                                     <p className="text-sm text-slate-400 leading-relaxed">
                                         A soft, sealed wearable designed for passive, non-invasive monitoring. It quietly captures
                                         response timing, stability patterns, and subtle day-to-day variability, building a personal
@@ -938,9 +935,9 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-80 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
                                         <h3 className="text-xl font-bold text-slate-200">InnerSense™</h3>
-                                        <span className="text-[10px] text-slate-600 font-black uppercase tracking-widest">Planned</span>
+                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
                                     </div>
-                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Pelvic Physiology Node (Female)</p>
+                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Pelvic Health Sensor (Female)</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         A sealed, passive intravaginal wearable that captures real pelvic physiology during everyday
                                         life. It tracks internal temperature trends, tissue state, and circulatory signals over time,
@@ -952,9 +949,9 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
                                         <h3 className="text-xl font-bold text-slate-300">FitSense™</h3>
-                                        <span className="text-[10px] text-slate-700 font-black uppercase tracking-widest">Planned</span>
+                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
                                     </div>
-                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Structural Fit Profiling (Male)</p>
+                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Size & Shape Mapping (Male)</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         A quick fit-profiling device that captures your structural footprint through a simple
                                         guided self-scan. No cameras, no photos, ever. Just a personalized size and shape
@@ -966,9 +963,9 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
                                         <h3 className="text-xl font-bold text-slate-300">ComfortSense™</h3>
-                                        <span className="text-[10px] text-slate-700 font-black uppercase tracking-widest">Planned</span>
+                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
                                     </div>
-                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Internal Geometry & Fit (Female)</p>
+                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Internal Comfort Mapping (Female)</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         An internal mapping wand that captures your unique pressure and geometry profile in a
                                         single session. Its soft, conforming design means real comfort data instead of assumptions.
@@ -979,9 +976,9 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
                                         <h3 className="text-xl font-bold text-slate-300">Axis™</h3>
-                                        <span className="text-[10px] text-slate-700 font-black uppercase tracking-widest">Planned</span>
+                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
                                     </div>
-                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Systemic Context Anchor</p>
+                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Whole-Body Context Sensor</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         The context anchor for the whole Nexalis system. It tracks your cardiovascular load,
                                         recovery state, autonomic balance, and daily rhythm so all your intimate health data
@@ -991,7 +988,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                                 {/* Placeholder/Future */}
                                 <div className="p-8 border border-dashed border-white/5 bg-transparent flex items-center justify-center">
-                                    <span className="text-[10px] text-slate-700 uppercase tracking-[0.4em] font-bold">Future Expansion</span>
+                                    <span className="text-xs text-slate-600 uppercase tracking-wider font-semibold">Future Expansion</span>
                                 </div>
                             </div>
                         </div>
