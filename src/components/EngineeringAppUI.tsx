@@ -483,7 +483,7 @@ const EngineeringAppUI: React.FC = () => {
                                     <div className="space-y-4">
                                         <div className="aspect-[4/3] bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center relative overflow-hidden group">
                                             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-50" />
-                                            <img src="/consumer-ui-wireframe.png" alt="Consumer UI" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                                            <img src={`${import.meta.env.BASE_URL}consumer-ui-wireframe.png`} alt="Consumer UI" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
                                             <div className="absolute bottom-4 left-4 right-4 p-4 bg-black/80 backdrop-blur-md border border-white/10 rounded-xl">
                                                 <h5 className="text-xs font-bold text-white">Consumer Dashboard</h5>
                                                 <p className="text-[10px] text-slate-400 mt-1 uppercase tracking-widest font-bold">Personal Wellness Mapping</p>
@@ -493,7 +493,7 @@ const EngineeringAppUI: React.FC = () => {
                                     <div className="space-y-4">
                                         <div className="aspect-[4/3] bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center relative overflow-hidden group">
                                             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent opacity-50" />
-                                            <img src="/clinician-ui-wireframe.png" alt="Clinician UI" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                                            <img src={`${import.meta.env.BASE_URL}clinician-ui-wireframe.png`} alt="Clinician UI" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
                                             <div className="absolute bottom-4 left-4 right-4 p-4 bg-black/80 backdrop-blur-md border border-white/10 rounded-xl">
                                                 <h5 className="text-xs font-bold text-white">Clinician Workspace</h5>
                                                 <p className="text-[10px] text-slate-400 mt-1 uppercase tracking-widest font-bold">Research-Grade Analytics</p>

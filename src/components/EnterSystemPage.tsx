@@ -208,7 +208,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                         {/* Male Wireframe Image (Left) */}
                         <div className="absolute left-0 md:left-12 top-1/2 -translate-y-1/2 opacity-70">
                             <img
-                                src="/wireframe-male.png"
+                                src={`${import.meta.env.BASE_URL}wireframe-male.png`}
                                 alt="Male System"
                                 className="h-[350px] w-auto object-contain"
                                 style={{
@@ -226,7 +226,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                         {/* Female Wireframe Image (Right) */}
                         <div className="absolute right-0 md:right-12 top-1/2 -translate-y-1/2 opacity-70">
                             <img
-                                src="/wireframe-female.png"
+                                src={`${import.meta.env.BASE_URL}wireframe-female.png`}
                                 alt="Female System"
                                 className="h-[350px] w-auto object-contain"
                                 style={{

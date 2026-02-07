@@ -33,7 +33,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                         }}
                     >
                         <img
-                            src="/rigisense-product.png"
+                            src={`${import.meta.env.BASE_URL}rigisense-product.png`}
                             alt="RigiSense Product"
                             className="max-w-full h-auto"
                         />
