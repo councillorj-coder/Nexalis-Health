@@ -204,13 +204,13 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                     </div>
 
                     {/* Animated Hero Visual */}
-                    <div className={`relative w-full max-w-5xl h-[500px] flex items-center justify-center transition-all duration-700 delay-[400ms] ${pageLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`relative w-full max-w-5xl h-[350px] md:h-[500px] flex items-center justify-center transition-all duration-700 delay-[400ms] ${pageLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         {/* Male Wireframe Image (Left) */}
                         <div className="absolute left-0 md:left-12 top-1/2 -translate-y-1/2 opacity-70">
                             <img
                                 src={`${import.meta.env.BASE_URL}wireframe-male.png`}
                                 alt="Male System"
-                                className="h-[350px] w-auto object-contain"
+                                className="h-[180px] sm:h-[250px] md:h-[350px] w-auto object-contain"
                                 style={{
                                     filter: 'brightness(0.8) contrast(1.1)',
                                     maskImage: 'radial-gradient(ellipse 60% 70% at center, black 40%, transparent 100%)',
@@ -228,7 +228,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             <img
                                 src={`${import.meta.env.BASE_URL}wireframe-female.png`}
                                 alt="Female System"
-                                className="h-[350px] w-auto object-contain"
+                                className="h-[180px] sm:h-[250px] md:h-[350px] w-auto object-contain"
                                 style={{
                                     filter: 'brightness(0.8) contrast(1.1)',
                                     maskImage: 'radial-gradient(ellipse 60% 70% at center, black 40%, transparent 100%)',
