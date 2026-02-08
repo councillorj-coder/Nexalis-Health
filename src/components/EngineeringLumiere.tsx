@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 type TabKey = 'overview' | 'sensing' | 'specs' | 'reference';
 
-const EngineeringFitSense: React.FC = () => {
+const EngineeringLumiere: React.FC = () => {
     const [activeTab, setActiveTab] = useState<TabKey>('overview');
 
     return (
@@ -12,7 +12,7 @@ const EngineeringFitSense: React.FC = () => {
             <div className="flex-none border-b border-white/10 p-6 flex items-center justify-between bg-[#080808]">
                 <div>
                     <h2 className="text-3xl font-black uppercase tracking-tight flex items-center gap-4">
-                        <span className="text-emerald-500">Node 05:</span> FitSense™
+                        <span className="text-emerald-500">Node 05:</span> Lumiere™
                     </h2>
                     <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1 pl-1">Structural Footprint Profiling Architecture</p>
                 </div>
@@ -83,8 +83,8 @@ const EngineeringFitSense: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}fitsense-photo.png`}
-                                            alt="FitSense Product"
+                                            src={`${import.meta.env.BASE_URL}lumiere-photo.png`}
+                                            alt="Lumiere™ Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />
                                     </div>
@@ -95,7 +95,7 @@ const EngineeringFitSense: React.FC = () => {
                             <section className="space-y-6 pt-12 border-t border-white/5">
                                 <h3 className="text-2xl font-black text-white">01. Why This Exists</h3>
                                 <p className="text-base text-slate-400 leading-relaxed max-w-4xl">
-                                    Fit is currently guesswork. Most sizing relies on self-measurement, inconsistent methods, or static approximations that fail to capture real geometry. FitSense exists to generate a clean, abstract Fit Profile Curve—a repeatable geometry signature that can be used for sizing, fit-class mapping, product compatibility, and longitudinal tracking—while remaining privacy-first and mass-producible.
+                                    Fit is currently guesswork. Most sizing relies on self-measurement, inconsistent methods, or static approximations that fail to capture real geometry. Lumiere™ exists to generate a clean, abstract Fit Profile Curve—a repeatable geometry signature that can be used for sizing, fit-class mapping, product compatibility, and longitudinal tracking—while remaining privacy-first and mass-producible.
                                 </p>
                             </section>
 
@@ -328,4 +328,4 @@ const EngineeringFitSense: React.FC = () => {
     );
 };
 
-export default EngineeringFitSense;
+export default EngineeringLumiere;

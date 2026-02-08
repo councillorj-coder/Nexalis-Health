@@ -365,7 +365,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </g>
                                 </g>
 
-                                {/* Node 4. FitSense - Bottom Left */}
+                                {/* Node 4. Lumiere - Bottom Left */}
                                 <g>
                                     {/* Pelvic Linkage - Blue Glow */}
                                     <line x1="125" y1="190" x2="50" y2="256" stroke="rgba(59,130,246,0.6)" strokeWidth="1.5" className="blur-[2px]">
@@ -381,10 +381,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 4. FitSense™
+                                            Node 4. Lumiere™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}fitsense-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}lumiere-wireframe.png`}
                                             x="-48"
                                             y="258"
                                             width="96"
@@ -945,10 +945,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </p>
                                 </div>
 
-                                {/* FitSense */}
+                                {/* Lumiere */}
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-slate-300">FitSense™</h3>
+                                        <h3 className="text-xl font-bold text-slate-300">Lumiere™</h3>
                                         <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
                                     </div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Size & Shape Mapping (Male)</p>

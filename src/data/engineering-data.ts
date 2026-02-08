@@ -83,11 +83,11 @@ export const nodes: NodeStatus[] = [
     formFactor: 'Sealed, passive intravaginal wearable'
   },
   {
-    id: 'fitsense',
-    name: 'FitSense',
+    id: 'lumiere',
+    name: 'Lumiere™',
     status: 'Concept',
     domains: ['Structural Profile', 'Guided Self-Scan', 'Privacy-First Design', 'Repeatable Footprint'],
-    description: 'A fast fit-profiling device that captures a repeatable structural footprint through guided self-scan motion. FitSense uses privacy-first design—no cameras, no photos, no explicit imagery—to establish personalized size and shape references.',
+    description: 'A fast fit-profiling device that captures a repeatable structural footprint through guided self-scan motion. Lumiere™ uses privacy-first design—no cameras, no photos, no explicit imagery—to establish personalized size and shape references.',
     tagline: 'Fast fit-profile scanning for length, circumference, and shape.',
     purpose: 'To eliminate guesswork in sizing and fitment by capturing a repeatable penile footprint—without cameras, photos, or explicit imagery.',
     keyMeasurements: ['Length profile', 'Circumference mapping', 'Shape geometry', 'Structural consistency'],

@@ -12,7 +12,7 @@ export default function EngineeringPortal() {
         location.pathname.includes('/rigisense') ||
         location.pathname.includes('/innersense') ||
         location.pathname.includes('/luminara') ||
-        location.pathname.includes('/fitsense');
+        location.pathname.includes('/lumiere');
     const isAppUI = location.pathname.includes('/appui');
 
     const navItems = [

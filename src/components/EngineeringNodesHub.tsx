@@ -4,9 +4,9 @@ import EngineeringAxis from './EngineeringAxis';
 import EngineeringRigiSense from './EngineeringRigiSense';
 import EngineeringInnerSense from './EngineeringInnerSense';
 import EngineeringLuminara from './EngineeringLuminara';
-import EngineeringFitSense from './EngineeringFitSense';
+import EngineeringLumiere from './EngineeringLumiere';
 
-type NodeKey = 'axis' | 'rigisense' | 'innersense' | 'luminara' | 'fitsense';
+type NodeKey = 'axis' | 'rigisense' | 'innersense' | 'luminara' | 'lumiere';
 
 const EngineeringNodesHub: React.FC = () => {
     const navigate = useNavigate();
@@ -17,7 +17,7 @@ const EngineeringNodesHub: React.FC = () => {
         if (location.pathname.includes('/rigisense')) return 'rigisense';
         if (location.pathname.includes('/innersense')) return 'innersense';
         if (location.pathname.includes('/luminara')) return 'luminara';
-        if (location.pathname.includes('/fitsense')) return 'fitsense';
+        if (location.pathname.includes('/lumiere')) return 'lumiere';
         return 'axis';
     };
 
@@ -28,7 +28,7 @@ const EngineeringNodesHub: React.FC = () => {
         { key: 'rigisense', label: 'RigiSense', color: 'border-emerald-500/50' },
         { key: 'innersense', label: 'InnerSense', color: 'border-emerald-500/50' },
         { key: 'luminara', label: 'Luminara™', color: 'border-emerald-500/50' },
-        { key: 'fitsense', label: 'FitSense', color: 'border-emerald-500/50' },
+        { key: 'lumiere', label: 'Lumiere™', color: 'border-emerald-500/50' },
     ];
 
     return (
@@ -61,7 +61,7 @@ const EngineeringNodesHub: React.FC = () => {
                 {activeNode === 'rigisense' && <EngineeringRigiSense />}
                 {activeNode === 'innersense' && <EngineeringInnerSense />}
                 {activeNode === 'luminara' && <EngineeringLuminara />}
-                {activeNode === 'fitsense' && <EngineeringFitSense />}
+                {activeNode === 'lumiere' && <EngineeringLumiere />}
             </div>
         </div>
     );
