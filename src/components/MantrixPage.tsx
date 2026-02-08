@@ -33,7 +33,7 @@ export default function MantrixPage(props: { onBack: () => void }) {
                         }}
                     >
                         <img
-                            src={`${import.meta.env.BASE_URL}Mantrix-product.png`}
+                            src={`${import.meta.env.BASE_URL}mantrix-product.png`}
                             alt="Mantrix Product"
                             className="max-w-full h-auto"
                         />

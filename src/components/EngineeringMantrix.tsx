@@ -78,7 +78,7 @@ const EngineeringMantrix: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}Mantrix-product.png`}
+                                            src={`${import.meta.env.BASE_URL}mantrix-product.png`}
                                             alt="Mantrix Product"
                                             className="max-w-full h-auto opacity-90 drop-shadow-[0_0_30px_rgba(16,185,129,0.1)]"
                                         />
