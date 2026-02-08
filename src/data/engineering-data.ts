@@ -95,11 +95,11 @@ export const nodes: NodeStatus[] = [
     formFactor: 'Handheld guided-scan device'
   },
   {
-    id: 'comfortsense',
-    name: 'ComfortSense',
+    id: 'luminara',
+    name: 'Luminara™',
     status: 'Dev',
     domains: ['Internal Geometry', 'Pressure Mapping', 'Session-Based', 'Conforming Design'],
-    description: 'A session-based internal mapping wand designed to capture repeatable pressure distribution signatures and geometry profiles. ComfortSense uses a conforming, non-rigid design to establish personalized comfort references for fitment intelligence.',
+    description: 'A session-based internal mapping wand designed to capture repeatable pressure distribution signatures and geometry profiles. Luminara™ uses a conforming, non-rigid design to establish personalized comfort references for fitment intelligence.',
     tagline: 'Session-based internal mapping for geometry + fitment intelligence.',
     purpose: 'To capture repeatable pressure distribution signatures and internal geometry for personalized comfort modeling.',
     keyMeasurements: ['Pressure distribution', 'Internal geometry', 'Max-expansion index', 'Comfort zone mapping'],

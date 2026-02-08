@@ -3,10 +3,10 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import EngineeringAxis from './EngineeringAxis';
 import EngineeringRigiSense from './EngineeringRigiSense';
 import EngineeringInnerSense from './EngineeringInnerSense';
-import EngineeringComfortSense from './EngineeringComfortSense';
+import EngineeringLuminara from './EngineeringLuminara';
 import EngineeringFitSense from './EngineeringFitSense';
 
-type NodeKey = 'axis' | 'rigisense' | 'innersense' | 'comfortsense' | 'fitsense';
+type NodeKey = 'axis' | 'rigisense' | 'innersense' | 'luminara' | 'fitsense';
 
 const EngineeringNodesHub: React.FC = () => {
     const navigate = useNavigate();
@@ -16,7 +16,7 @@ const EngineeringNodesHub: React.FC = () => {
     const getActiveNodeFromPath = () => {
         if (location.pathname.includes('/rigisense')) return 'rigisense';
         if (location.pathname.includes('/innersense')) return 'innersense';
-        if (location.pathname.includes('/comfortsense')) return 'comfortsense';
+        if (location.pathname.includes('/luminara')) return 'luminara';
         if (location.pathname.includes('/fitsense')) return 'fitsense';
         return 'axis';
     };
@@ -27,7 +27,7 @@ const EngineeringNodesHub: React.FC = () => {
         { key: 'axis', label: 'Axis', color: 'border-emerald-500/50' },
         { key: 'rigisense', label: 'RigiSense', color: 'border-emerald-500/50' },
         { key: 'innersense', label: 'InnerSense', color: 'border-emerald-500/50' },
-        { key: 'comfortsense', label: 'ComfortSense', color: 'border-emerald-500/50' },
+        { key: 'luminara', label: 'Luminara™', color: 'border-emerald-500/50' },
         { key: 'fitsense', label: 'FitSense', color: 'border-emerald-500/50' },
     ];
 
@@ -41,8 +41,8 @@ const EngineeringNodesHub: React.FC = () => {
                             key={node.key}
                             onClick={() => navigate(`/engineering/${node.key}`)}
                             className={`px-6 py-2 rounded-lg text-[10px] uppercase tracking-[0.2em] font-black transition-all whitespace-nowrap border ${activeNode === node.key
-                                    ? 'bg-emerald-600/10 border-emerald-500 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.1)]'
-                                    : 'border-transparent text-slate-500 hover:text-slate-300 hover:bg-white/5'
+                                ? 'bg-emerald-600/10 border-emerald-500 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.1)]'
+                                : 'border-transparent text-slate-500 hover:text-slate-300 hover:bg-white/5'
                                 }`}
                         >
                             {node.label}
@@ -60,7 +60,7 @@ const EngineeringNodesHub: React.FC = () => {
                 {activeNode === 'axis' && <EngineeringAxis />}
                 {activeNode === 'rigisense' && <EngineeringRigiSense />}
                 {activeNode === 'innersense' && <EngineeringInnerSense />}
-                {activeNode === 'comfortsense' && <EngineeringComfortSense />}
+                {activeNode === 'luminara' && <EngineeringLuminara />}
                 {activeNode === 'fitsense' && <EngineeringFitSense />}
             </div>
         </div>

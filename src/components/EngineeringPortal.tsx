@@ -11,7 +11,7 @@ export default function EngineeringPortal() {
     const isNodes = location.pathname.includes('/axis') ||
         location.pathname.includes('/rigisense') ||
         location.pathname.includes('/innersense') ||
-        location.pathname.includes('/comfortsense') ||
+        location.pathname.includes('/luminara') ||
         location.pathname.includes('/fitsense');
     const isAppUI = location.pathname.includes('/appui');
 

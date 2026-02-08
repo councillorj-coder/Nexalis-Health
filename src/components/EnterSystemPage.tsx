@@ -458,7 +458,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </g>
                                 </g>
 
-                                {/* Node 3. ComfortSense - Bottom Right */}
+                                {/* Node 3. Luminara - Bottom Right */}
                                 <g>
                                     {/* Pelvic Linkage - Red Glow */}
                                     <line x1="675" y1="190" x2="750" y2="256" stroke="rgba(225,29,72,0.6)" strokeWidth="1.5" className="blur-[2px]">
@@ -474,10 +474,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 3. ComfortSense™
+                                            Node 3. Luminara™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}comfortsense-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}luminara-wireframe.png`}
                                             x="752"
                                             y="258"
                                             width="96"
@@ -959,10 +959,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </p>
                                 </div>
 
-                                {/* ComfortSense */}
+                                {/* Luminara */}
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-slate-300">ComfortSense™</h3>
+                                        <h3 className="text-xl font-bold text-slate-300">Luminara™</h3>
                                         <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
                                     </div>
                                     <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Internal Comfort Mapping (Female)</p>

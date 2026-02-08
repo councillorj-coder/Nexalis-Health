@@ -208,7 +208,7 @@ const EngineeringAppUI: React.FC = () => {
                                     <div className="p-8 bg-rose-500/[0.02] border border-rose-500/10 rounded-3xl space-y-6">
                                         <div className="flex justify-between items-start">
                                             <h5 className="text-xl font-bold text-white">Harmonic Sigils</h5>
-                                            <span className="text-[10px] font-bold text-rose-400 uppercase tracking-widest px-2 py-1 bg-rose-500/10 rounded">ComfortSense</span>
+                                            <span className="text-[10px] font-bold text-rose-400 uppercase tracking-widest px-2 py-1 bg-rose-500/10 rounded">Luminara™</span>
                                         </div>
                                         <p className="text-sm text-slate-400">Soft containment, layered contours, rhythmic geometry. Encodes depth and response curves.</p>
                                         <div className="grid grid-cols-2 gap-4 pt-4">
@@ -354,7 +354,7 @@ const EngineeringAppUI: React.FC = () => {
                                     {/* Harmonic Sigils */}
                                     <div className="space-y-6">
                                         <h5 className="text-xs font-black uppercase text-rose-500 tracking-widest flex items-center gap-4">
-                                            Harmonic Variants (ComfortSense)
+                                            Harmonic Variants (Luminara™)
                                             <span className="h-px bg-rose-500/20 flex-1" />
                                         </h5>
                                         <div className="grid md:grid-cols-2 gap-6">
