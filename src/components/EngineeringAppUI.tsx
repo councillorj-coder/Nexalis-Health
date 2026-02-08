@@ -530,7 +530,7 @@ const EngineeringAppUI: React.FC = () => {
                                 <h3 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 border-b border-white/5 pb-2">Full System Architecture</h3>
                                 <div className="grid md:grid-cols-5 gap-4 py-8">
                                     {[
-                                        { step: '1. Hardware Node', desc: 'Sensor clusters (Axis, RigiSense, etc.)' },
+                                        { step: '1. Hardware Node', desc: 'Sensor clusters (Axis, Mantrix, etc.)' },
                                         { step: '2. Signal Abstraction', desc: 'Remove raw units, convert to indexes' },
                                         { step: '3. Logic Pipeline', desc: 'Attribute changes to systemic context' },
                                         { step: '4. API Gateway', desc: 'Secure transmission to encrypted cloud' },

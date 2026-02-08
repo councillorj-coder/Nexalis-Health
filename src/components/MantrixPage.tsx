@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import TechnicalBriefModal from './TechnicalBriefModal';
 
-export default function RigiSensePage(props: { onBack: () => void }) {
+export default function MantrixPage(props: { onBack: () => void }) {
     const [showTechnicalBrief, setShowTechnicalBrief] = useState(false);
 
     return (
@@ -18,7 +18,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
 
             <main className="py-16 px-8 max-w-3xl mx-auto space-y-16 text-center">
                 {/* Title */}
-                <h1 className="text-7xl font-black">RigiSense™</h1>
+                <h1 className="text-7xl font-black">Mantrix™</h1>
 
                 {/* Nexalis · First Sensing Node */}
                 <p className="text-sm font-bold uppercase tracking-[0.3em] text-slate-500">Nexalis · First Sensing Node</p>
@@ -33,8 +33,8 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                         }}
                     >
                         <img
-                            src={`${import.meta.env.BASE_URL}rigisense-product.png`}
-                            alt="RigiSense Product"
+                            src={`${import.meta.env.BASE_URL}Mantrix-product.png`}
+                            alt="Mantrix Product"
                             className="max-w-full h-auto"
                         />
                     </div>
@@ -42,7 +42,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
 
                 {/* Main Description */}
                 <div className="space-y-4">
-                    <h2 className="text-4xl font-black">RigiSense™</h2>
+                    <h2 className="text-4xl font-black">Mantrix™</h2>
                     <p className="text-xl">Clinical-grade rigidity and physiological signal acquisition system</p>
                     <p className="text-base text-slate-400">
                         Designed to capture continuous, real-world erectile physiology using passive, non-invasive sensing and principled data abstraction.
@@ -54,7 +54,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                     <h2 className="text-4xl font-black">Why This Exists</h2>
 
                     <p className="text-base text-slate-400 leading-relaxed">
-                        Erectile dysfunction develops gradually, through changes in rigidity, stability, and response over time, yet it is typically evaluated using brief clinical tests, questionnaires, or artificial stimulation that capture only isolated moments. This makes early changes difficult to detect and long-term patterns hard to understand. Because erectile function is continuous and sensitive to real-world conditions, meaningful measurement requires passive, non-invasive sensing that operates without user input or visual anatomical capture. RigiSense was designed to meet clinical measurement standards first, while also enabling individuals to track erectile health, performance, and recovery over time as part of broader wellness monitoring.
+                        Erectile dysfunction develops gradually, through changes in rigidity, stability, and response over time, yet it is typically evaluated using brief clinical tests, questionnaires, or artificial stimulation that capture only isolated moments. This makes early changes difficult to detect and long-term patterns hard to understand. Because erectile function is continuous and sensitive to real-world conditions, meaningful measurement requires passive, non-invasive sensing that operates without user input or visual anatomical capture. Mantrix was designed to meet clinical measurement standards first, while also enabling individuals to track erectile health, performance, and recovery over time as part of broader wellness monitoring.
                     </p>
                 </div>
 
@@ -64,7 +64,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
 
                     <div className="space-y-6">
                         <p className="text-base text-slate-400 leading-relaxed">
-                            RigiSense does not measure anatomy or performance outcomes.<br />
+                            Mantrix does not measure anatomy or performance outcomes.<br />
                             It measures abstracted physical signals that describe erectile behavior over time.
                         </p>
 
@@ -107,7 +107,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                         </div>
 
                         <p className="text-base text-slate-400 leading-relaxed pt-4">
-                            RigiSense provides signal-level insight, not diagnosis, enabling clinical interpretation and long-term personal monitoring within a broader health and wellness framework.
+                            Mantrix provides signal-level insight, not diagnosis, enabling clinical interpretation and long-term personal monitoring within a broader health and wellness framework.
                         </p>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                     <h2 className="text-4xl font-black">Hardware Architecture</h2>
 
                     <p className="text-base text-slate-400 leading-relaxed">
-                        RigiSense is designed as a single-purpose, clinical-grade sensing node, optimized for passive wear, signal stability, and long-term durability.
+                        Mantrix is designed as a single-purpose, clinical-grade sensing node, optimized for passive wear, signal stability, and long-term durability.
                     </p>
 
                     {/* Form Factor */}
@@ -142,7 +142,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                     {/* Fit Strategy */}
                     <div className="space-y-4">
                         <h3 className="text-xl font-bold text-white">Fit Strategy</h3>
-                        <p className="text-sm text-slate-400">RigiSense is offered in two size profiles to accommodate the general population while preserving measurement integrity:</p>
+                        <p className="text-sm text-slate-400">Mantrix is offered in two size profiles to accommodate the general population while preserving measurement integrity:</p>
                         <div className="space-y-3 text-left">
                             <div>
                                 <h4 className="font-semibold text-white">Precision Fit (smaller size)</h4>
@@ -193,7 +193,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                     {/* Design Philosophy */}
                     <div className="space-y-4">
                         <h3 className="text-xl font-bold text-white">Design Philosophy</h3>
-                        <p className="text-sm text-slate-400">RigiSense hardware is designed to be:</p>
+                        <p className="text-sm text-slate-400">Mantrix hardware is designed to be:</p>
                         <ul className="text-sm text-slate-400 space-y-2 list-disc list-inside text-left">
                             <li>Lightweight and comfortable for extended, continuous wear</li>
                             <li>Visually appealing and non-stigmatizing, suitable for both clinical and personal health contexts</li>
@@ -209,7 +209,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                     <h2 className="text-4xl font-black">Data Flow</h2>
 
                     <p className="text-base text-slate-400 leading-relaxed">
-                        RigiSense moves data through a simple, controlled pipeline, from physical signal capture to longitudinal insight. Privacy is maintained through data minimization, non-visual sensing, and protected user profiles.
+                        Mantrix moves data through a simple, controlled pipeline, from physical signal capture to longitudinal insight. Privacy is maintained through data minimization, non-visual sensing, and protected user profiles.
                     </p>
 
                     <div className="space-y-6">
@@ -227,7 +227,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                         <div className="space-y-3 text-left">
                             <h3 className="text-lg font-bold text-white">2. Raw Sensor Output (Device → App)</h3>
                             <ul className="text-sm text-slate-400 space-y-1 list-disc list-inside">
-                                <li>RigiSense transmits raw sensor inputs via Bluetooth Low Energy to the companion application</li>
+                                <li>Mantrix transmits raw sensor inputs via Bluetooth Low Energy to the companion application</li>
                                 <li>Transfer occurs at controlled intervals to support 24+ hour battery life</li>
                                 <li>The system does not require continuous streaming for normal operation</li>
                             </ul>
@@ -290,7 +290,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
 
                     <div className="space-y-6">
                         <p className="text-base text-slate-400 leading-relaxed">
-                            RigiSense serves as the foundational sensing node within the Nexalis ecosystem.
+                            Mantrix serves as the foundational sensing node within the Nexalis ecosystem.
                         </p>
 
                         <p className="text-base text-slate-400 leading-relaxed">
@@ -298,7 +298,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                         </p>
 
                         <div className="space-y-3 text-left">
-                            <p className="text-base text-white font-semibold">Within the Nexalis system, RigiSense:</p>
+                            <p className="text-base text-white font-semibold">Within the Nexalis system, Mantrix:</p>
                             <ul className="text-sm text-slate-400 space-y-2 list-disc list-inside">
                                 <li>Establishes a personal baseline for erectile rigidity and stability</li>
                                 <li>Feeds abstracted signal data into Nexalis software for longitudinal analysis</li>
@@ -308,11 +308,11 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                         </div>
 
                         <p className="text-base text-slate-400 leading-relaxed">
-                            RigiSense is intentionally focused on signal acquisition, not diagnosis or interpretation. This separation allows higher-level Nexalis software layers to evolve independently, incorporating additional physiological inputs, clinical frameworks, and personalized models over time.
+                            Mantrix is intentionally focused on signal acquisition, not diagnosis or interpretation. This separation allows higher-level Nexalis software layers to evolve independently, incorporating additional physiological inputs, clinical frameworks, and personalized models over time.
                         </p>
 
                         <p className="text-base text-slate-400 leading-relaxed">
-                            As the first sensing node, RigiSense sets the standard for how data is collected, abstracted, and integrated across the Nexalis platform—forming the basis for future devices, insights, and system-level intelligence.
+                            As the first sensing node, Mantrix sets the standard for how data is collected, abstracted, and integrated across the Nexalis platform—forming the basis for future devices, insights, and system-level intelligence.
                         </p>
                     </div>
                 </div>
@@ -323,7 +323,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
 
                     <div className="space-y-6">
                         <p className="text-base text-white font-semibold">
-                            RigiSense is currently in the pre-development phase.
+                            Mantrix is currently in the pre-development phase.
                         </p>
 
                         <p className="text-base text-slate-400 leading-relaxed">
@@ -344,7 +344,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
                         </p>
 
                         <p className="text-base text-slate-400 leading-relaxed italic">
-                            RigiSense is being presented now to invite early technical and clinical collaboration, not as a finished or partially implemented product.
+                            Mantrix is being presented now to invite early technical and clinical collaboration, not as a finished or partially implemented product.
                         </p>
                     </div>
                 </div>
@@ -380,7 +380,7 @@ export default function RigiSensePage(props: { onBack: () => void }) {
             </main>
 
             <footer className="py-12 px-8 border-t border-white/10 text-center text-xs text-slate-700">
-                © 2026 Nexalis Health. RigiSense is a wellness device.
+                © 2026 Nexalis Health. Mantrix is a wellness device.
             </footer>
 
             <TechnicalBriefModal

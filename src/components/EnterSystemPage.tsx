@@ -335,7 +335,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* Male Interface Nodes (Left of Figure) */}
                             <g>
-                                {/* Node 1. RigiSense - Top Left */}
+                                {/* Node 1. Mantrix - Top Left */}
                                 <g>
                                     {/* Pelvic Linkage - Blue Glow */}
                                     <line x1="125" y1="190" x2="50" y2="156" stroke="rgba(59,130,246,0.6)" strokeWidth="1.5" className="blur-[2px]">
@@ -351,10 +351,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 1. RigiSense™
+                                            Node 1. Mantrix™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}rigisense-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}mantrix-wireframe.png`}
                                             x="-48"
                                             y="158"
                                             width="96"
@@ -917,10 +917,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-                                {/* RigiSense */}
+                                {/* Mantrix */}
                                 <div className="p-8 border border-white/10 bg-white/[0.02] space-y-4 hover:border-blue-500/30 transition-colors">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">RigiSense™</h3>
+                                        <h3 className="text-xl font-bold text-white">Mantrix™</h3>
                                         <span className="text-xs text-blue-500 font-bold uppercase tracking-wider">Active</span>
                                     </div>
                                     <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Structural & Stability Sensor (Male)</p>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 type TabKey = 'overview' | 'specs' | 'reference';
 
-const EngineeringRigiSense: React.FC = () => {
+const EngineeringMantrix: React.FC = () => {
     const [activeTab, setActiveTab] = useState<TabKey>('overview');
 
     return (
@@ -12,7 +12,7 @@ const EngineeringRigiSense: React.FC = () => {
             <div className="flex-none border-b border-white/10 p-6 flex items-center justify-between bg-[#080808]">
                 <div>
                     <h2 className="text-3xl font-black uppercase tracking-tight flex items-center gap-4">
-                        <span className="text-emerald-500">Node 02:</span> RigiSense™
+                        <span className="text-emerald-500">Node 02:</span> Mantrix™
                     </h2>
                     <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1 pl-1">Clinical Grade Sensing Architecture</p>
                 </div>
@@ -52,7 +52,7 @@ const EngineeringRigiSense: React.FC = () => {
 
                     {activeTab === 'overview' ? (
                         <div className="space-y-16 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                            {/* OVERVIEW CONTENT PORTED FROM RigiSensePage.tsx */}
+                            {/* OVERVIEW CONTENT PORTED FROM MantrixPage.tsx */}
 
                             {/* Product Hero */}
                             <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -78,8 +78,8 @@ const EngineeringRigiSense: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}rigisense-product.png`}
-                                            alt="RigiSense Product"
+                                            src={`${import.meta.env.BASE_URL}Mantrix-product.png`}
+                                            alt="Mantrix Product"
                                             className="max-w-full h-auto opacity-90 drop-shadow-[0_0_30px_rgba(16,185,129,0.1)]"
                                         />
                                     </div>
@@ -90,7 +90,7 @@ const EngineeringRigiSense: React.FC = () => {
                             <section className="space-y-6 pt-12 border-t border-white/5">
                                 <h3 className="text-2xl font-black text-white">Why This Exists</h3>
                                 <p className="text-base text-slate-400 leading-relaxed max-w-4xl">
-                                    Erectile dysfunction develops gradually, through changes in rigidity, stability, and response over time, yet it is typically evaluated using brief clinical tests, questionnaires, or artificial stimulation that capture only isolated moments. This makes early changes difficult to detect and long-term patterns hard to understand. Because erectile function is continuous and sensitive to real-world conditions, meaningful measurement requires passive, non-invasive sensing that operates without user input or visual anatomical capture. RigiSense was designed to meet clinical measurement standards first, while also enabling individuals to track erectile health, performance, and recovery over time as part of broader wellness monitoring.
+                                    Erectile dysfunction develops gradually, through changes in rigidity, stability, and response over time, yet it is typically evaluated using brief clinical tests, questionnaires, or artificial stimulation that capture only isolated moments. This makes early changes difficult to detect and long-term patterns hard to understand. Because erectile function is continuous and sensitive to real-world conditions, meaningful measurement requires passive, non-invasive sensing that operates without user input or visual anatomical capture. Mantrix was designed to meet clinical measurement standards first, while also enabling individuals to track erectile health, performance, and recovery over time as part of broader wellness monitoring.
                                 </p>
                             </section>
 
@@ -294,7 +294,7 @@ const EngineeringRigiSense: React.FC = () => {
                             <section className="space-y-4">
                                 <h3 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 border-b border-white/5 pb-2">01. System Definition</h3>
                                 <p className="text-lg text-slate-300 leading-relaxed font-light font-mono text-sm">
-                                    RigiSense™ is a sealed, non-explicit wearable sensing ring designed for continuous structural, circulatory, and stability measurement with minimal power draw and high signal reliability. The system prioritizes passive sensing, low-noise signal capture, and comfort-preserving geometry.
+                                    Mantrix™ is a sealed, non-explicit wearable sensing ring designed for continuous structural, circulatory, and stability measurement with minimal power draw and high signal reliability. The system prioritizes passive sensing, low-noise signal capture, and comfort-preserving geometry.
                                 </p>
                             </section>
 
@@ -428,4 +428,4 @@ const EngineeringRigiSense: React.FC = () => {
     );
 };
 
-export default EngineeringRigiSense;
+export default EngineeringMantrix;

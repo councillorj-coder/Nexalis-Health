@@ -9,7 +9,7 @@ export default function EngineeringPortal() {
 
     // Mapping paths to content components
     const isNodes = location.pathname.includes('/axis') ||
-        location.pathname.includes('/rigisense') ||
+        location.pathname.includes('/mantrix') ||
         location.pathname.includes('/innersense') ||
         location.pathname.includes('/luminara') ||
         location.pathname.includes('/lumiere');

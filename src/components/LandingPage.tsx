@@ -258,7 +258,7 @@ export default function LandingPage(props: {
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
                         <div className="space-y-4">
                             <div className="font-bold">Ecosystem</div>
-                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Rigisense</div>
+                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Mantrix</div>
                             <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">InnerSense</div>
                             <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Axis</div>
                         </div>

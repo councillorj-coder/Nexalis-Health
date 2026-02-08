@@ -34,7 +34,7 @@ export interface Issue {
 export const buildFocus = {
   sprint: 'Sprint 24.08',
   targets: [
-    'RigiSense v0.9 Firmware Handover',
+    'Mantrix™ v0.9 Firmware Handover',
     'Data Pipeline Sample Rate Optimization (100Hz -> 60Hz)',
     'BLE Connection Stability Patch'
   ],
@@ -59,11 +59,11 @@ export const architectureNodes = [
 
 export const nodes: NodeStatus[] = [
   {
-    id: 'rigisense',
-    name: 'RigiSense',
+    id: 'mantrix',
+    name: 'Mantrix™',
     status: 'Beta',
     domains: ['Structural Stability', 'Circulation Response', 'Thermal Context', 'Variability Patterns'],
-    description: 'A soft, sealed wearable designed for passive, non-invasive monitoring of erectile physiology. RigiSense captures continuous real-world data—response timing, stability patterns, and subtle variability—establishing personal baselines and detecting meaningful change over time.',
+    description: 'A soft, sealed wearable designed for passive, non-invasive monitoring of erectile physiology. Mantrix™ captures continuous real-world data—response timing, stability patterns, and subtle variability—establishing personal baselines and detecting meaningful change over time.',
     tagline: 'Clinical-grade rigidity and physiological signal acquisition.',
     purpose: 'To capture what has never been measurable at home: continuous, real-world erectile physiology using passive, non-invasive sensing.',
     keyMeasurements: ['Response timing patterns', 'Structural stability over time', 'Variability signatures', 'Thermal context trends'],
@@ -120,7 +120,7 @@ export const nodes: NodeStatus[] = [
   }
 ];
 
-export const rigiSenseSpecs: SpecItem[] = [
+export const mantrixSpecs: SpecItem[] = [
   { category: 'Requirements', parameter: 'Battery Life', value: '> 8 Hours', notes: 'Active measure mode' },
   { category: 'Requirements', parameter: 'Waterproofing', value: 'IP68', notes: 'Submersible 1.5m 30min' },
   { category: 'Sensor Stack', parameter: 'Strain Gauge', value: 'Dual-axis soft elastomer', notes: 'Custom fab' },

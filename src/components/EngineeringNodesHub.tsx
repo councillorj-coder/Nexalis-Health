@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import EngineeringAxis from './EngineeringAxis';
-import EngineeringRigiSense from './EngineeringRigiSense';
+import EngineeringMantrix from './EngineeringMantrix';
 import EngineeringInnerSense from './EngineeringInnerSense';
 import EngineeringLuminara from './EngineeringLuminara';
 import EngineeringLumiere from './EngineeringLumiere';
 
-type NodeKey = 'axis' | 'rigisense' | 'innersense' | 'luminara' | 'lumiere';
+type NodeKey = 'axis' | 'mantrix' | 'innersense' | 'luminara' | 'lumiere';
 
 const EngineeringNodesHub: React.FC = () => {
     const navigate = useNavigate();
@@ -14,7 +14,7 @@ const EngineeringNodesHub: React.FC = () => {
 
     // Determine active node from URL or default to axis
     const getActiveNodeFromPath = () => {
-        if (location.pathname.includes('/rigisense')) return 'rigisense';
+        if (location.pathname.includes('/mantrix')) return 'mantrix';
         if (location.pathname.includes('/innersense')) return 'innersense';
         if (location.pathname.includes('/luminara')) return 'luminara';
         if (location.pathname.includes('/lumiere')) return 'lumiere';
@@ -25,7 +25,7 @@ const EngineeringNodesHub: React.FC = () => {
 
     const nodes = [
         { key: 'axis', label: 'Axis', color: 'border-emerald-500/50' },
-        { key: 'rigisense', label: 'RigiSense', color: 'border-emerald-500/50' },
+        { key: 'mantrix', label: 'Mantrix™', color: 'border-emerald-500/50' },
         { key: 'innersense', label: 'InnerSense', color: 'border-emerald-500/50' },
         { key: 'luminara', label: 'Luminara™', color: 'border-emerald-500/50' },
         { key: 'lumiere', label: 'Lumiere™', color: 'border-emerald-500/50' },
@@ -58,7 +58,7 @@ const EngineeringNodesHub: React.FC = () => {
             {/* Render the Active Node Module */}
             <div className="flex-1 overflow-hidden relative">
                 {activeNode === 'axis' && <EngineeringAxis />}
-                {activeNode === 'rigisense' && <EngineeringRigiSense />}
+                {activeNode === 'mantrix' && <EngineeringMantrix />}
                 {activeNode === 'innersense' && <EngineeringInnerSense />}
                 {activeNode === 'luminara' && <EngineeringLuminara />}
                 {activeNode === 'lumiere' && <EngineeringLumiere />}
