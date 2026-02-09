@@ -111,7 +111,7 @@ export default function LandingPage(props: {
                     <span className="text-white/40 font-semibold tracking-[-0.06em] text-4xl md:text-6xl block mt-4 transition-opacity duration-1000 hover:text-white/60">for Human Intimacy</span>
                 </h1>
                 <p className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed mb-12 tracking-normal">
-                    Clarity for the most personal part of life.
+                    A private physiology platform for wellness and compatibility.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 items-center justify-center relative">
                     {/* Data Streaming Animation SVG - Behind Buttons */}
