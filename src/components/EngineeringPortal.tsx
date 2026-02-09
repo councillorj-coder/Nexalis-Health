@@ -8,15 +8,15 @@ export default function EngineeringPortal() {
     const location = useLocation();
 
     // Mapping paths to content components
-    const isNodes = location.pathname.includes('/axis') ||
+    const isNodes = location.pathname.includes('/compass') ||
         location.pathname.includes('/mantrix') ||
         location.pathname.includes('/innersense') ||
-        location.pathname.includes('/luminara') ||
-        location.pathname.includes('/lumiere');
+        location.pathname.includes('/meridia') ||
+        location.pathname.includes('/caliber');
     const isAppUI = location.pathname.includes('/appui');
 
     const navItems = [
-        { label: 'Node Ecosystem', path: '/engineering/axis', color: 'bg-emerald-500', shadow: 'shadow-emerald-500/50' },
+        { label: 'Node Ecosystem', path: '/engineering/compass', color: 'bg-emerald-500', shadow: 'shadow-emerald-500/50' },
         { label: 'App Interface', path: '/engineering/appui', color: 'bg-blue-500', shadow: 'shadow-blue-500/50' },
     ];
 

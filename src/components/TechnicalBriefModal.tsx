@@ -28,7 +28,7 @@ const TechnicalBriefModal: React.FC<TechnicalBriefModalProps> = ({ isOpen, onClo
                     <div className="flex items-start justify-between p-6">
                         <div>
                             <h2 className="text-2xl font-black tracking-tight text-white uppercase flex items-center gap-3">
-                                <span className="text-blue-500">Node 01:</span> Mantrix™
+                                <span className="text-blue-500">Node 01:</span> Sentinel™
                             </h2>
                             <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1">Classification: Clinical Grade Sensing Architecture</p>
                         </div>

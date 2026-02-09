@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
-import MantrixPage from './components/MantrixPage'
+import SentinelPage from './components/SentinelPage'
 import EnterSystemPage from './components/EnterSystemPage'
 import EngineeringPortal from './components/EngineeringPortal'
 
@@ -30,8 +30,8 @@ function AppRoutes() {
         element={<EnterSystemPage onBack={() => navigate('/')} />}
       />
       <Route
-        path="/mantrix"
-        element={<MantrixPage onBack={() => navigate('/')} />}
+        path="/sentinel"
+        element={<SentinelPage onBack={() => navigate('/')} />}
       />
       <Route
         path="/engineering/*"

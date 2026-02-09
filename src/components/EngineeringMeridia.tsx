@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 type TabKey = 'overview' | 'v1_mapping' | 'v2_activation' | 'core_specs' | 'spine_design' | 'electronics' | 'open_questions';
 
-const EngineeringLuminara: React.FC = () => {
+const EngineeringMeridia: React.FC = () => {
     const [activeTab, setActiveTab] = useState<TabKey>('overview');
 
     return (
@@ -12,7 +12,7 @@ const EngineeringLuminara: React.FC = () => {
             <div className="flex-none border-b border-white/10 p-6 flex items-center justify-between bg-[#080808]">
                 <div>
                     <h2 className="text-3xl font-black uppercase tracking-tight flex items-center gap-4">
-                        <span className="text-emerald-500">Node 04:</span> Luminara™
+                        <span className="text-emerald-500">Node 03:</span> Meridia™
                     </h2>
                     <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1 pl-1">Session-Based Internal Mapping</p>
                 </div>
@@ -84,7 +84,7 @@ const EngineeringLuminara: React.FC = () => {
                                         Session-based internal mapping wand for geometry + fitment intelligence.
                                     </h3>
                                     <p className="text-lg text-slate-400 leading-relaxed">
-                                        Luminara™ is a session-based internal mapping node designed to capture repeatable pressure distribution signatures and a max-expansion index using a conforming, non-rigid spine. It outputs non-explicit, abstracted maps intended for longitudinal comparison and compatibility modeling—not anatomy.
+                                        Meridia™ is a session-based internal mapping node designed to capture repeatable pressure distribution signatures and a max-expansion index using a conforming, non-rigid spine. It outputs non-explicit, abstracted maps intended for longitudinal comparison and compatibility modeling—not anatomy.
                                     </p>
                                     <div className="pt-4 flex flex-wrap gap-4 text-xs text-slate-500 uppercase tracking-widest font-mono">
                                         <span className="px-3 py-1 border border-white/10 rounded">Session-Based</span>
@@ -103,8 +103,8 @@ const EngineeringLuminara: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}luminara-photo.png`}
-                                            alt="Luminara™ Product"
+                                            src={`${import.meta.env.BASE_URL}meridia-photo.png`}
+                                            alt="Meridia™ Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />
                                     </div>
@@ -115,7 +115,7 @@ const EngineeringLuminara: React.FC = () => {
                             <section className="space-y-6 pt-12 border-t border-white/5">
                                 <h3 className="text-2xl font-black text-white">Why This Exists</h3>
                                 <p className="text-base text-slate-400 leading-relaxed max-w-4xl">
-                                    Internal fit and comfort mechanics are currently inferred through subjective trial-and-error and inconsistent descriptions. Luminara™ exists to generate repeatable internal map signatures so changes can be tracked objectively across time and interventions—without explicit visualization or anatomy rendering.
+                                    Internal fit and comfort mechanics are currently inferred through subjective trial-and-error and inconsistent descriptions. Meridia™ exists to generate repeatable internal map signatures so changes can be tracked objectively across time and interventions—without explicit visualization or anatomy rendering.
                                 </p>
                                 <ul className="space-y-2 text-sm text-slate-400 list-disc pl-5 marker:text-indigo-500">
                                     <li>Repeatable mapping sessions (baseline and follow-ups)</li>
@@ -802,7 +802,7 @@ const EngineeringLuminara: React.FC = () => {
                                             Continuous flex vs. Segmented vertebrae.
                                         </div>
                                         <div>
-                                            <strong className="block text-slate-200 mb-1">Neutral Axis</strong>
+                                            <strong className="block text-slate-200 mb-1">Neutral Compass</strong>
                                             Exact placement of flex PCB to minimize strain cycling.
                                         </div>
                                         <div>
@@ -914,4 +914,4 @@ const EngineeringLuminara: React.FC = () => {
     );
 };
 
-export default EngineeringLuminara;
+export default EngineeringMeridia;

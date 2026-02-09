@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 type TabKey = 'overview' | 'sensing' | 'specs' | 'reference';
 
-const EngineeringLumiere: React.FC = () => {
+const EngineeringCaliber: React.FC = () => {
     const [activeTab, setActiveTab] = useState<TabKey>('overview');
 
     return (
@@ -12,7 +12,7 @@ const EngineeringLumiere: React.FC = () => {
             <div className="flex-none border-b border-white/10 p-6 flex items-center justify-between bg-[#080808]">
                 <div>
                     <h2 className="text-3xl font-black uppercase tracking-tight flex items-center gap-4">
-                        <span className="text-emerald-500">Node 05:</span> Lumiere™
+                        <span className="text-emerald-500">Node 04:</span> Caliber™
                     </h2>
                     <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1 pl-1">Structural Footprint Profiling Architecture</p>
                 </div>
@@ -83,8 +83,8 @@ const EngineeringLumiere: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}lumiere-photo.png`}
-                                            alt="Lumiere™ Product"
+                                            src={`${import.meta.env.BASE_URL}caliber-black-photo.jpg`}
+                                            alt="Caliber™ Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />
                                     </div>
@@ -95,7 +95,7 @@ const EngineeringLumiere: React.FC = () => {
                             <section className="space-y-6 pt-12 border-t border-white/5">
                                 <h3 className="text-2xl font-black text-white">01. Why This Exists</h3>
                                 <p className="text-base text-slate-400 leading-relaxed max-w-4xl">
-                                    Fit is currently guesswork. Most sizing relies on self-measurement, inconsistent methods, or static approximations that fail to capture real geometry. Lumiere™ exists to generate a clean, abstract Fit Profile Curve—a repeatable geometry signature that can be used for sizing, fit-class mapping, product compatibility, and longitudinal tracking—while remaining privacy-first and mass-producible.
+                                    Fit is currently guesswork. Most sizing relies on self-measurement, inconsistent methods, or static approximations that fail to capture real geometry. Caliber™ exists to generate a clean, abstract Fit Profile Curve—a repeatable geometry signature that can be used for sizing, fit-class mapping, product compatibility, and longitudinal tracking—while remaining privacy-first and mass-producible.
                                 </p>
                             </section>
 
@@ -133,7 +133,7 @@ const EngineeringLumiere: React.FC = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                     <div className="p-8 bg-white/[0.02] border border-white/5 space-y-4">
                                         <div className="text-[10px] text-red-500 uppercase font-bold tracking-[0.2em]">Displacement Tracking</div>
-                                        <h4 className="text-xl font-bold text-white">Length Axis (Optical)</h4>
+                                        <h4 className="text-xl font-bold text-white">Length Compass (Optical)</h4>
                                         <p className="text-sm text-slate-400 leading-relaxed">
                                             Optical speckle / flow (IR) displacement sensing tracks surface motion during glide to compute distance traveled.
                                         </p>
@@ -146,7 +146,7 @@ const EngineeringLumiere: React.FC = () => {
 
                                     <div className="p-8 bg-white/[0.02] border border-white/5 space-y-4">
                                         <div className="text-[10px] text-red-500 uppercase font-bold tracking-[0.2em]">Diameter Profiling</div>
-                                        <h4 className="text-xl font-bold text-white">Girth Axis (ToF)</h4>
+                                        <h4 className="text-xl font-bold text-white">Girth Compass (ToF)</h4>
                                         <p className="text-sm text-slate-400 leading-relaxed">
                                             Dual-point time-of-flight (ToF) diameter sensing in an opposed geometry measures distance-to-surface continuously.
                                         </p>
@@ -328,4 +328,4 @@ const EngineeringLumiere: React.FC = () => {
     );
 };
 
-export default EngineeringLumiere;
+export default EngineeringCaliber;

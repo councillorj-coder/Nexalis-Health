@@ -108,10 +108,10 @@ export default function LandingPage(props: {
             <section className="relative pt-44 pb-32 px-6 flex flex-col items-center text-center max-w-5xl mx-auto">
                 <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[0.9]">
                     <span className="text-white">The Intelligence System</span><br />
-                    <span className="text-white/40 font-semibold tracking-[-0.06em] text-4xl md:text-6xl block mt-4 transition-opacity duration-1000 hover:text-white/60">For Human Intimate Health</span>
+                    <span className="text-white/40 font-semibold tracking-[-0.06em] text-4xl md:text-6xl block mt-4 transition-opacity duration-1000 hover:text-white/60">for Human Intimacy</span>
                 </h1>
                 <p className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed mb-12 tracking-normal">
-                    The missing layer of human health data.
+                    Clarity for the most personal part of life.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 items-center justify-center relative">
                     {/* Data Streaming Animation SVG - Behind Buttons */}
@@ -258,9 +258,10 @@ export default function LandingPage(props: {
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
                         <div className="space-y-4">
                             <div className="font-bold">Ecosystem</div>
-                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Mantrix</div>
-                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">InnerSense</div>
-                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Axis</div>
+                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Sentinel</div>
+                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Elaria</div>
+                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Compass</div>
+                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Caliber</div>
                         </div>
                         <div className="space-y-4">
                             <div className="font-bold">Company</div>

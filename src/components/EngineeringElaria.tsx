@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 type TabKey = 'overview' | 'specs' | 'reference';
 
-const EngineeringInnerSense: React.FC = () => {
+const EngineeringElaria: React.FC = () => {
     const [activeTab, setActiveTab] = useState<TabKey>('overview');
 
     return (
@@ -12,7 +12,7 @@ const EngineeringInnerSense: React.FC = () => {
             <div className="flex-none border-b border-white/10 p-6 flex items-center justify-between bg-[#080808]">
                 <div>
                     <h2 className="text-3xl font-black uppercase tracking-tight flex items-center gap-4">
-                        <span className="text-emerald-500">Node 03:</span> InnerSense™
+                        <span className="text-emerald-500">Node 02:</span> Elaria™
                     </h2>
                     <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1 pl-1">Clinical Grade Sensing Architecture</p>
                 </div>
@@ -60,7 +60,7 @@ const EngineeringInnerSense: React.FC = () => {
                                         Clinical-grade pelvic physiology signal acquisition.
                                     </h3>
                                     <p className="text-lg text-slate-400 leading-relaxed">
-                                        InnerSense™ is a sealed, passive, intravaginal wearable designed to capture real pelvic physiology in everyday life. It prioritizes low-noise signal capture, comfort-stable geometry, and principled data abstraction for clinically defensible longitudinal monitoring.
+                                        Elaria™ is a sealed, passive, intravaginal wearable designed to capture real pelvic physiology in everyday life. It prioritizes low-noise signal capture, comfort-stable geometry, and principled data abstraction for clinically defensible longitudinal monitoring.
                                     </p>
                                     <div className="pt-4 flex flex-wrap gap-4 text-xs text-slate-500 uppercase tracking-widest font-mono">
                                         <span className="px-3 py-1 border border-white/10 rounded">Non-Explicit</span>
@@ -80,7 +80,7 @@ const EngineeringInnerSense: React.FC = () => {
                                     >
                                         <img
                                             src={`${import.meta.env.BASE_URL}innersense-realism.png?v=4`}
-                                            alt="InnerSense Product"
+                                            alt="Elaria Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />
                                     </div>
@@ -91,7 +91,7 @@ const EngineeringInnerSense: React.FC = () => {
                             <section className="space-y-6 pt-12 border-t border-white/5">
                                 <h3 className="text-2xl font-black text-white">Why This Exists</h3>
                                 <p className="text-base text-slate-400 leading-relaxed max-w-4xl">
-                                    Pelvic and vaginal health is often evaluated through snapshots—brief exams, isolated tests, and subjective descriptions—despite symptoms and physiologic shifts occurring across daily life. InnerSense™ is designed to measure longitudinal pelvic signal patterns with minimal user friction, enabling baseline modeling, change detection, and objective tracking of intervention outcomes over time.
+                                    Pelvic and vaginal health is often evaluated through snapshots—brief exams, isolated tests, and subjective descriptions—despite symptoms and physiologic shifts occurring across daily life. Elaria™ is designed to measure longitudinal pelvic signal patterns with minimal user friction, enabling baseline modeling, change detection, and objective tracking of intervention outcomes over time.
                                 </p>
                             </section>
 
@@ -209,7 +209,7 @@ const EngineeringInnerSense: React.FC = () => {
                             <section className="space-y-4">
                                 <h3 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 border-b border-white/5 pb-2">01. System Definition</h3>
                                 <p className="text-lg text-slate-300 leading-relaxed font-light font-mono text-sm">
-                                    InnerSense™ is a sealed intravaginal wearable sensing node built for passive, longitudinal pelvic physiology monitoring. The system emphasizes comfort-stable fit, low-power operation, and abstracted outputs suitable for clinical review and personal tracking without explicit visualization.
+                                    Elaria™ is a sealed intravaginal wearable sensing node built for passive, longitudinal pelvic physiology monitoring. The system emphasizes comfort-stable fit, low-power operation, and abstracted outputs suitable for clinical review and personal tracking without explicit visualization.
                                 </p>
                             </section>
 
@@ -364,4 +364,4 @@ const EngineeringInnerSense: React.FC = () => {
     );
 };
 
-export default EngineeringInnerSense;
+export default EngineeringElaria;

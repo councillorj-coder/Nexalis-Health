@@ -182,7 +182,7 @@ const EngineeringAppUI: React.FC = () => {
                                     <div className="p-8 bg-blue-500/[0.02] border border-blue-500/10 rounded-3xl space-y-6">
                                         <div className="flex justify-between items-start">
                                             <h5 className="text-xl font-bold text-white">Structural Sigils</h5>
-                                            <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest px-2 py-1 bg-blue-500/10 rounded">Lumiere™</span>
+                                            <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest px-2 py-1 bg-blue-500/10 rounded">Caliber™</span>
                                         </div>
                                         <p className="text-sm text-slate-400">Strong geometry, architectural lines, and symmetry cues. Encodes length and girth primarily as proportions.</p>
                                         <div className="grid grid-cols-2 gap-4 pt-4">
@@ -208,7 +208,7 @@ const EngineeringAppUI: React.FC = () => {
                                     <div className="p-8 bg-rose-500/[0.02] border border-rose-500/10 rounded-3xl space-y-6">
                                         <div className="flex justify-between items-start">
                                             <h5 className="text-xl font-bold text-white">Harmonic Sigils</h5>
-                                            <span className="text-[10px] font-bold text-rose-400 uppercase tracking-widest px-2 py-1 bg-rose-500/10 rounded">Luminara™</span>
+                                            <span className="text-[10px] font-bold text-rose-400 uppercase tracking-widest px-2 py-1 bg-rose-500/10 rounded">Meridia™</span>
                                         </div>
                                         <p className="text-sm text-slate-400">Soft containment, layered contours, rhythmic geometry. Encodes depth and response curves.</p>
                                         <div className="grid grid-cols-2 gap-4 pt-4">
@@ -309,7 +309,7 @@ const EngineeringAppUI: React.FC = () => {
                                     {/* Structural Sigils */}
                                     <div className="space-y-6">
                                         <h5 className="text-xs font-black uppercase text-blue-500 tracking-widest flex items-center gap-4">
-                                            Structural Variants (Lumiere™)
+                                            Structural Variants (Caliber™)
                                             <span className="h-px bg-blue-500/20 flex-1" />
                                         </h5>
                                         <div className="grid md:grid-cols-3 gap-6">
@@ -354,7 +354,7 @@ const EngineeringAppUI: React.FC = () => {
                                     {/* Harmonic Sigils */}
                                     <div className="space-y-6">
                                         <h5 className="text-xs font-black uppercase text-rose-500 tracking-widest flex items-center gap-4">
-                                            Harmonic Variants (Luminara™)
+                                            Harmonic Variants (Meridia™)
                                             <span className="h-px bg-rose-500/20 flex-1" />
                                         </h5>
                                         <div className="grid md:grid-cols-2 gap-6">
@@ -530,7 +530,7 @@ const EngineeringAppUI: React.FC = () => {
                                 <h3 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 border-b border-white/5 pb-2">Full System Architecture</h3>
                                 <div className="grid md:grid-cols-5 gap-4 py-8">
                                     {[
-                                        { step: '1. Hardware Node', desc: 'Sensor clusters (Axis, Mantrix, etc.)' },
+                                        { step: '1. Hardware Node', desc: 'Sensor clusters (Compass, Sentinel, etc.)' },
                                         { step: '2. Signal Abstraction', desc: 'Remove raw units, convert to indexes' },
                                         { step: '3. Logic Pipeline', desc: 'Attribute changes to systemic context' },
                                         { step: '4. API Gateway', desc: 'Secure transmission to encrypted cloud' },

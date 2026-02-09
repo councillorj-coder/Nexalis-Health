@@ -34,7 +34,7 @@ export interface Issue {
 export const buildFocus = {
   sprint: 'Sprint 24.08',
   targets: [
-    'Mantrix™ v0.9 Firmware Handover',
+    'Sentinel™ v0.9 Firmware Handover',
     'Data Pipeline Sample Rate Optimization (100Hz -> 60Hz)',
     'BLE Connection Stability Patch'
   ],
@@ -60,10 +60,10 @@ export const architectureNodes = [
 export const nodes: NodeStatus[] = [
   {
     id: 'mantrix',
-    name: 'Mantrix™',
+    name: 'Sentinel™',
     status: 'Beta',
     domains: ['Structural Stability', 'Circulation Response', 'Thermal Context', 'Variability Patterns'],
-    description: 'A soft, sealed wearable designed for passive, non-invasive monitoring of erectile physiology. Mantrix™ captures continuous real-world data—response timing, stability patterns, and subtle variability—establishing personal baselines and detecting meaningful change over time.',
+    description: 'A soft, sealed wearable designed for passive, non-invasive monitoring of erectile physiology. It captures continuous real-world data—response timing, stability patterns, and subtle variability—establishing personal baselines and detecting meaningful change over time.',
     tagline: 'Clinical-grade rigidity and physiological signal acquisition.',
     purpose: 'To capture what has never been measurable at home: continuous, real-world erectile physiology using passive, non-invasive sensing.',
     keyMeasurements: ['Response timing patterns', 'Structural stability over time', 'Variability signatures', 'Thermal context trends'],
@@ -72,10 +72,10 @@ export const nodes: NodeStatus[] = [
   },
   {
     id: 'innersense',
-    name: 'InnerSense',
+    name: 'Elaria™',
     status: 'Dev',
     domains: ['Pelvic Physiology', 'Thermal Regulation', 'Longitudinal Tracking', 'Minimal Friction'],
-    description: 'A sealed, passive intravaginal wearable designed to capture real pelvic physiology in everyday life. InnerSense enables longitudinal monitoring of internal temperature trends, tissue state, and circulatory signals—with minimal user friction and maximum discretion.',
+    description: 'A sealed, passive intravaginal wearable designed to capture real pelvic physiology in everyday life. It enables longitudinal monitoring of internal temperature trends, tissue state, and circulatory signals—with minimal user friction and maximum discretion.',
     tagline: 'Clinical-grade pelvic physiology signal acquisition.',
     purpose: 'To enable longitudinal pelvic health monitoring in everyday life—capturing what cannot be measured in clinical snapshots.',
     keyMeasurements: ['Internal temperature trends', 'Tissue state indicators', 'Circulatory signals', 'Pelvic activity patterns'],
@@ -83,11 +83,11 @@ export const nodes: NodeStatus[] = [
     formFactor: 'Sealed, passive intravaginal wearable'
   },
   {
-    id: 'lumiere',
-    name: 'Lumiere™',
+    id: 'caliber',
+    name: 'Caliber™',
     status: 'Concept',
     domains: ['Structural Profile', 'Guided Self-Scan', 'Privacy-First Design', 'Repeatable Footprint'],
-    description: 'A fast fit-profiling device that captures a repeatable structural footprint through guided self-scan motion. Lumiere™ uses privacy-first design—no cameras, no photos, no explicit imagery—to establish personalized size and shape references.',
+    description: 'A fast fit-profiling device that captures a repeatable structural footprint through guided self-scan motion. It uses privacy-first design—no cameras, no photos, no explicit imagery—to establish personalized size and shape references.',
     tagline: 'Fast fit-profile scanning for length, circumference, and shape.',
     purpose: 'To eliminate guesswork in sizing and fitment by capturing a repeatable penile footprint—without cameras, photos, or explicit imagery.',
     keyMeasurements: ['Length profile', 'Circumference mapping', 'Shape geometry', 'Structural consistency'],
@@ -95,11 +95,11 @@ export const nodes: NodeStatus[] = [
     formFactor: 'Handheld guided-scan device'
   },
   {
-    id: 'luminara',
-    name: 'Luminara™',
+    id: 'meridia',
+    name: 'Meridia™',
     status: 'Dev',
     domains: ['Internal Geometry', 'Pressure Mapping', 'Session-Based', 'Conforming Design'],
-    description: 'A session-based internal mapping wand designed to capture repeatable pressure distribution signatures and geometry profiles. Luminara™ uses a conforming, non-rigid design to establish personalized comfort references for fitment intelligence.',
+    description: 'A session-based internal mapping wand designed to capture repeatable pressure distribution signatures and geometry profiles. It uses a conforming, non-rigid design to establish personalized comfort references for fitment intelligence.',
     tagline: 'Session-based internal mapping for geometry + fitment intelligence.',
     purpose: 'To capture repeatable pressure distribution signatures and internal geometry for personalized comfort modeling.',
     keyMeasurements: ['Pressure distribution', 'Internal geometry', 'Max-expansion index', 'Comfort zone mapping'],
@@ -107,11 +107,11 @@ export const nodes: NodeStatus[] = [
     formFactor: 'Session-based internal mapping wand'
   },
   {
-    id: 'axis',
-    name: 'Axis',
+    id: 'compass',
+    name: 'Compass™',
     status: 'Stable',
     domains: ['Systemic Context', 'Recovery State', 'Cardiovascular Load', 'Daily Rhythm'],
-    description: 'The context anchor for the Nexalis system. Axis captures whole-body signals—cardiovascular load, recovery state, autonomic balance, and daily rhythm—so intimate-region data can be interpreted with full systemic context.',
+    description: 'The context anchor for the Nexalis system. It captures whole-body signals—cardiovascular load, recovery state, autonomic balance, and daily rhythm—so intimate-region data can be interpreted with full systemic context.',
     tagline: 'Systemic context node for longitudinal health interpretation.',
     purpose: 'To provide whole-body context so intimate-region markers can be interpreted with clarity—linking local signals to systemic state.',
     keyMeasurements: ['Cardiovascular load', 'Recovery state', 'Autonomic balance', 'Daily rhythm patterns'],

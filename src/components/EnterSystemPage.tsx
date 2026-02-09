@@ -4,6 +4,7 @@ import { nodes } from '../data/engineering-data';
 
 export default function EnterSystemPage(props: { onBack: () => void }) {
     const [scrollY, setScrollY] = useState(0)
+    const [activeSection, setActiveSection] = useState('Operating Interface');
     const [pageLoaded, setPageLoaded] = useState(false)
     const [selectedNode, setSelectedNode] = useState<string | null>(null);
 
@@ -200,7 +201,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             <span className="text-white/90">THE NEXALIS</span><br />
                             <span className="text-white/40">SYSTEM</span>
                         </h1>
-                        <p className="text-sm uppercase tracking-widest text-slate-400">Continuous Health Intelligence</p>
+                        <p className="text-sm uppercase tracking-[0.4em] text-slate-500">Physiological Intelligence Architecture</p>
                     </div>
 
                     {/* Animated Hero Visual */}
@@ -278,10 +279,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <mask id="imageFadeMaskRightBottom">
                                     <rect x="750" y="247" width="100" height="64" fill="url(#radialFade)" />
                                 </mask>
-                                <mask id="imageFadeMaskAxisLeft">
+                                <mask id="imageFadeMaskCompassLeft">
                                     <rect x="-50" y="47" width="100" height="64" fill="url(#radialFade)" />
                                 </mask>
-                                <mask id="imageFadeMaskAxisRight">
+                                <mask id="imageFadeMaskCompassRight">
                                     <rect x="750" y="47" width="100" height="64" fill="url(#radialFade)" />
                                 </mask>
                             </defs>
@@ -335,7 +336,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* Male Interface Nodes (Left of Figure) */}
                             <g>
-                                {/* Node 1. Mantrix - Top Left */}
+                                {/* Node 1. Sentinel - Top Left */}
                                 <g>
                                     {/* Pelvic Linkage - Blue Glow */}
                                     <line x1="125" y1="190" x2="50" y2="156" stroke="rgba(59,130,246,0.6)" strokeWidth="1.5" className="blur-[2px]">
@@ -351,7 +352,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 1. Mantrix™
+                                            Node 1. Sentinel™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}mantrix-wireframe.png`}
@@ -365,7 +366,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </g>
                                 </g>
 
-                                {/* Node 4. Lumiere - Bottom Left */}
+                                {/* Node 4. Caliber - Bottom Left */}
                                 <g>
                                     {/* Pelvic Linkage - Blue Glow */}
                                     <line x1="125" y1="190" x2="50" y2="256" stroke="rgba(59,130,246,0.6)" strokeWidth="1.5" className="blur-[2px]">
@@ -381,10 +382,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 4. Lumiere™
+                                            Node 4. Caliber™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}lumiere-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}caliber-wireframe.png`}
                                             x="-48"
                                             y="258"
                                             width="96"
@@ -411,16 +412,16 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 5. AXIS™
+                                            Node 5. Compass™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}axis-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}compass-wireframe.png`}
                                             x="-48"
                                             y="58"
                                             width="96"
                                             height="42"
                                             preserveAspectRatio="xMidYMid meet"
-                                            mask="url(#imageFadeMaskAxisLeft)"
+                                            mask="url(#imageFadeMaskCompassLeft)"
                                         />
                                     </g>
                                 </g>
@@ -428,7 +429,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* Female Interface Nodes (Right of Figure) */}
                             <g>
-                                {/* Node 2. InnerSense - Top Right */}
+                                {/* Node 2. Elaria - Top Right */}
                                 <g>
                                     {/* Pelvic Linkage - Red Glow */}
                                     <line x1="675" y1="190" x2="750" y2="156" stroke="rgba(225,29,72,0.6)" strokeWidth="1.5" className="blur-[2px]">
@@ -444,7 +445,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 2. InnerSense™
+                                            Node 2. Elaria™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}innersense-wireframe.png`}
@@ -458,7 +459,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </g>
                                 </g>
 
-                                {/* Node 3. Luminara - Bottom Right */}
+                                {/* Node 3. Meridia - Bottom Right */}
                                 <g>
                                     {/* Pelvic Linkage - Red Glow */}
                                     <line x1="675" y1="190" x2="750" y2="256" stroke="rgba(225,29,72,0.6)" strokeWidth="1.5" className="blur-[2px]">
@@ -474,10 +475,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 3. Luminara™
+                                            Node 3. Meridia™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}luminara-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}meridia-wireframe.png`}
                                             x="752"
                                             y="258"
                                             width="96"
@@ -504,16 +505,16 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 5. AXIS™
+                                            Node 5. Compass™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}axis-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}compass-wireframe.png`}
                                             x="752"
                                             y="58"
                                             width="96"
                                             height="42"
                                             preserveAspectRatio="xMidYMid meet"
-                                            mask="url(#imageFadeMaskAxisRight)"
+                                            mask="url(#imageFadeMaskCompassRight)"
                                         />
                                     </g>
                                 </g>
@@ -858,7 +859,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             {/* Labels */}
                             <text x="120" y="350" textAnchor="middle" className="fill-slate-400 text-xs uppercase tracking-wider">Male System</text>
                             <text x="680" y="350" textAnchor="middle" className="fill-slate-400 text-xs uppercase tracking-wider">Female System</text>
-                            <text x="400" y="300" textAnchor="middle" className="fill-slate-300 text-sm font-medium">Nexalis AI Engine</text>
+                            <text x="400" y="300" textAnchor="middle" className="fill-slate-300 text-sm font-medium">Nexalis Resonance Core</text>
                         </svg>
                     </div>
 
@@ -869,19 +870,18 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                     </div>
                 </section >
 
-                {/* System Summary */}
                 <section className="py-32 px-8 border-t border-white/5">
                     <div className="max-w-4xl mx-auto text-center space-y-12">
-                        <h2 className="text-4xl font-black tracking-tight">Nexalis System Overview</h2>
+                        <h2 className="text-4xl font-black tracking-tight">Intelligence for Intimate Vitality</h2>
                         <div className="space-y-6 text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto">
                             <p>
-                                Nexalis is a health monitoring system designed to track intimate wellness over time—not just during doctor visits, but throughout your daily life.
+                                Nexalis is a privacy-first biological intelligence system engineered for the longitudinal mastery of intimate health. We replace guesswork with high-fidelity physiological signals, integrated seamlessly into your daily rhythm.
                             </p>
-                            <p className="text-blue-400 font-medium">
-                                Instead of snapshots, you get a complete picture.
+                            <p className="text-blue-400 font-medium tracking-wide">
+                                Data-driven confidence. Clinical-grade discretion.
                             </p>
                             <p className="text-base text-slate-400">
-                                Small, comfortable sensors collect data over hours, days, and weeks. They learn what's normal for you, spot changes early, and reveal patterns that traditional checkups miss.
+                                Using a distributed network of medical-grade sensing nodes, Nexalis captures the subtle patterns of your body’s unique baseline. This is self-knowledge at the highest resolution—providing clear, visual trajectories of your structural progress and autonomic recovery with absolute mathematical clarity.
                             </p>
                         </div>
                     </div>
@@ -900,7 +900,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             <div className="space-y-6 max-w-3xl">
                                 <h2 className="text-5xl font-black">Shared Intelligence</h2>
                                 <p className="text-xl text-slate-300 leading-relaxed">
-                                    All sensor data flows into an AI layer that turns raw signals into simple, useful insights about your health patterns and trends.
+                                    Your personal AI companion turns complex biological signals into simple, intuitive insights, so you can focus on connection instead of data.
                                 </p>
                             </div>
                         </div>
@@ -913,31 +913,31 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             </div>
                             <div className="space-y-4">
                                 <h2 className="text-5xl font-black">Sensing Nodes</h2>
-                                <p className="text-slate-400 text-lg">Each sensor is designed to be comfortable, discreet, and easy to use in everyday life.</p>
+                                <p className="text-slate-400 text-lg">Each node is a masterpiece of design—discreet, effortless, and optimized for your comfort. Because high-performance living should never get in the way of the moment.</p>
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-                                {/* Mantrix */}
+                                {/* Sentinel */}
                                 <div className="p-8 border border-white/10 bg-white/[0.02] space-y-4 hover:border-blue-500/30 transition-colors">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Mantrix™</h3>
-                                        <span className="text-xs text-blue-500 font-bold uppercase tracking-wider">Active</span>
+                                        <h3 className="text-xl font-bold text-white">Sentinel™</h3>
+                                        <span className="text-[10px] text-blue-500 font-black uppercase tracking-widest">Active</span>
                                     </div>
-                                    <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Structural & Stability Sensor (Male)</p>
+                                    <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Structural & Stability Node (Male)</p>
                                     <p className="text-sm text-slate-400 leading-relaxed">
                                         A soft, sealed wearable designed for passive, non-invasive monitoring. It quietly captures
-                                        response timing, stability patterns, and subtle day-to-day variability, building a personal
+                                        螳 response timing, stability patterns, and subtle day-to-day variability, building a personal
                                         baseline that makes it easy to spot meaningful changes over time.
                                     </p>
                                 </div>
 
-                                {/* InnerSense */}
+                                {/* Elaria */}
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-80 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-slate-200">InnerSense™</h3>
-                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
+                                        <h3 className="text-xl font-bold text-slate-200">Elaria™</h3>
+                                        <span className="text-[10px] text-slate-600 font-black uppercase tracking-widest">Planned</span>
                                     </div>
-                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Pelvic Health Sensor (Female)</p>
+                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Pelvic Physiology Node (Female)</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         A sealed, passive intravaginal wearable that captures real pelvic physiology during everyday
                                         life. It tracks internal temperature trends, tissue state, and circulatory signals over time,
@@ -945,13 +945,13 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </p>
                                 </div>
 
-                                {/* Lumiere */}
+                                {/* Caliber */}
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-slate-300">Lumiere™</h3>
-                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
+                                        <h3 className="text-xl font-bold text-slate-300">Caliber™</h3>
+                                        <span className="text-[10px] text-slate-700 font-black uppercase tracking-widest">Planned</span>
                                     </div>
-                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Size & Shape Mapping (Male)</p>
+                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Structural Fit Profiling (Male)</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         A quick fit-profiling device that captures your structural footprint through a simple
                                         guided self-scan. No cameras, no photos, ever. Just a personalized size and shape
@@ -959,26 +959,26 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </p>
                                 </div>
 
-                                {/* Luminara */}
+                                {/* Meridia */}
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-slate-300">Luminara™</h3>
-                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
+                                        <h3 className="text-xl font-bold text-slate-300">Meridia™</h3>
+                                        <span className="text-[10px] text-slate-700 font-black uppercase tracking-widest">Planned</span>
                                     </div>
-                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Internal Comfort Mapping (Female)</p>
+                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Internal Geometry & Fit (Female)</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         An internal mapping wand that captures your unique pressure and geometry profile in a
                                         single session. Its soft, conforming design means real comfort data instead of assumptions.
                                     </p>
                                 </div>
 
-                                {/* Axis */}
+                                {/* Compass */}
                                 <div className="p-8 border border-white/5 bg-white/[0.01] space-y-4 opacity-60 hover:opacity-100 transition-all">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-slate-300">Axis™</h3>
-                                        <span className="text-xs text-slate-500 font-bold uppercase tracking-wider">Planned</span>
+                                        <h3 className="text-xl font-bold text-slate-300">Compass™</h3>
+                                        <span className="text-[10px] text-slate-700 font-black uppercase tracking-widest">Planned</span>
                                     </div>
-                                    <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold">Whole-Body Context Sensor</p>
+                                    <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Systemic Context Anchor</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">
                                         The context anchor for the whole Nexalis system. It tracks your cardiovascular load,
                                         recovery state, autonomic balance, and daily rhythm so all your intimate health data
@@ -1053,8 +1053,8 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <div className="space-y-6">
                                     <h2 className="text-5xl font-black">Intelligence Layer</h2>
                                     <p className="text-lg text-slate-400 leading-relaxed">
-                                        Data from all nodes is synchronized, time-aligned, and turned into interpretable patterns
-                                        rather than raw numbers.
+                                        High-fidelity signals from all system nodes are synchronized and time-aligned, then processed
+                                        into interpretable physiological patterns rather than raw anatomical measurements.
                                     </p>
                                     <div className="space-y-4 py-6">
                                         <div className="flex items-start gap-4">
@@ -1103,7 +1103,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 </div>
 
                                 <div className="grid md:grid-cols-2 gap-8">
-                                    {/* Male Track */}
+                                    {/* Masculine Track */}
                                     <div className="p-8 border border-white/5 bg-white/[0.02] space-y-6">
                                         <div className="space-y-2">
                                             <h3 className="text-xl font-bold text-blue-400">Male Track</h3>
@@ -1156,26 +1156,33 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             </div>
                             <div className="space-y-8 max-w-5xl">
                                 <div className="space-y-4">
-                                    <h2 className="text-5xl font-black text-white">The Nexalis Harmony Engine</h2>
-                                    <h3 className="text-lg text-purple-400 uppercase tracking-[0.2em] font-bold">Cross-Physiology Correlation Layer</h3>
+                                    <h2 className="text-5xl font-black text-white">The Harmony Engine</h2>
+                                    <h3 className="text-lg text-purple-400 uppercase tracking-[0.2em] font-bold">Physiological Alignment Layer</h3>
                                 </div>
 
                                 <p className="text-xl text-slate-300 leading-relaxed font-medium max-w-4xl">
-                                    The Nexalis Harmony Engine is the system’s correlation layer, designed to securely analyze and align male and female health data across structure, response, and fitment metrics.
+                                    The Harmony Engine is our proprietary correlation layer, engineered to securely align
+                                    multi-node physiological datasets across masculine and feminine architectures.
                                 </p>
 
                                 <div className="grid md:grid-cols-2 gap-12 pt-8">
                                     <div className="space-y-6 text-base text-slate-400 leading-relaxed">
                                         <p>
-                                            Rather than evaluating individuals in isolation, the Harmony Engine compares abstracted, non-identifying patterns (stability, timing, pressure distribution, recovery dynamics) across complementary datasets. This enables insights into alignment, comfort balance, and physiological synchrony without exposing raw measurements or explicit anatomy.
+                                            Rather than evaluating individuals in isolation, the Harmony Engine correlates abstracted
+                                            physiological patterns—stability markers, timing signatures, and volumetric response—across
+                                            complementary datasets. This enables deep insights into structural alignment and
+                                            physiological synchrony without exposing explicit anatomy.
                                         </p>
                                         <p>
-                                            Each individual maintains a private, encrypted Harmony Profile generated from their longitudinal data. Profiles are owned by the user, stored securely, and never exposed as raw signals. Correlation occurs at the pattern level, ensuring privacy while allowing meaningful cross-analysis.
+                                            Each individual maintains a private, encrypted Harmony Profile generated from longitudinal
+                                            system interactions. High-level correlation occurs exclusively at the pattern layer,
+                                            preserving total autonomy while enabling clinical-grade cross-analysis.
                                         </p>
                                     </div>
                                     <div className="p-10 border-l-2 border-purple-500/30 bg-purple-500/[0.02] flex items-center">
                                         <p className="text-lg text-slate-300 italic leading-relaxed">
-                                            "The result is a system capable of understanding how two physiologies interact—clinically, structurally, and contextually—while preserving autonomy, discretion, and data integrity."
+                                            "The architecture enables the system to understand how dual physiologies interact—structurally,
+                                            clinically, and contextually—while maintaining absolute data integrity and discretion."
                                         </p>
                                     </div>
                                 </div>
@@ -1199,13 +1206,13 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                                     <div className="grid md:grid-cols-2 gap-16 pt-12">
                                         <p className="text-2xl text-slate-300 leading-tight font-medium">
-                                            A Harmony Profile is a private, encrypted representation of how an individual’s body tends
-                                            to align, respond, and recover—expressed entirely through abstracted patterns.
+                                            A Harmony Profile is a secure, longitudinal map of your biological resonance—expressed
+                                            through beautiful, abstracted pattern signatures.
                                         </p>
                                         <p className="text-lg text-slate-400 leading-relaxed">
-                                            Instead of explicit imagery or raw measurements, Nexalis uses symbolic visuals to communicate
-                                            compatibility through intuitive color fields, gradients, and motion cues. It is a safer,
-                                            more intentional signal of physiological alignment.
+                                            By replacing explicit metrics with non-identifiable symbolic visuals, Nexalis provides
+                                            a definitive signal of physiological alignment. It is an intentional, privacy-preserving
+                                            language for intimate compatibility.
                                         </p>
                                     </div>
                                 </div>
@@ -1341,7 +1348,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             </div>
                         </div>
 
-                        {/* 07. Nexalis Sigils Section */}
+                        {/* 07. Nexalis Lumen Section */}
                         <div className="space-y-16 pt-32">
                             <div className="space-y-12">
                                 <div className="flex items-center gap-4">
@@ -1352,19 +1359,20 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     <div className="space-y-4">
                                         <h2 className="text-6xl md:text-7xl font-black tracking-tighter leading-[0.85] text-white">
                                             Nexalis <br />
-                                            <span className="text-violet-500 underline decoration-violet-500/30 decoration-8 underline-offset-8">Sigils™</span>
+                                            <span className="text-violet-500 underline decoration-violet-500/30 decoration-8 underline-offset-8">Lumen™</span>
                                         </h2>
                                         <p className="text-[10px] text-slate-500 uppercase tracking-[0.4em] font-black">Your Physiology · Your Symbol · Your Story</p>
                                     </div>
 
                                     <div className="grid md:grid-cols-2 gap-16 pt-8">
                                         <p className="text-2xl text-slate-300 leading-tight font-medium">
-                                            Think of Nexalis Sigils like an astrology sign—but for your intimate physical variability.
+                                            Nexalis Lumen™ is a symbolic representation of your physical vitality, derived from
+                                            longitudinal biological pattern analysis.
                                         </p>
                                         <p className="text-lg text-slate-400 leading-relaxed">
-                                            Where astrology uses birth charts to describe personality and compatibility, Sigils use
-                                            longitudinal physiological patterns to represent your unique body intelligence—how you
-                                            respond, recover, and align over time.
+                                            Where traditional metrics provide snapshots, Lumen™ uses longitudinal signatures to
+                                            represent your unique biological intelligence—how you respond, recover, and align over
+                                            extended temporal horizons.
                                         </p>
                                     </div>
                                 </div>
@@ -1373,19 +1381,18 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                             {/* Astrology Comparison */}
                             <div className="p-10 border-l-2 border-violet-500/30 bg-violet-500/[0.02] max-w-4xl">
                                 <p className="text-lg text-slate-300 italic leading-relaxed">
-                                    "Just as someone might introduce themselves as a 'Scorpio rising' or mention their
-                                    'Mercury retrograde,' your Sigil becomes an abstract, privacy-preserving way to
-                                    communicate intimate physiological traits without exposing explicit data or imagery."
+                                    "Your Lumen™ becomes an abstract, privacy-preserving signature designed to communicate
+                                    intimate physiological traits without exposing explicit clinical metrics or imagery."
                                 </p>
                             </div>
 
-                            {/* Sigil Properties Grid */}
+                            {/* Lumen Properties Grid */}
                             <div className="grid md:grid-cols-3 gap-6">
                                 <div className="p-8 border border-white/10 bg-white/[0.02] space-y-4 hover:border-violet-500/30 transition-colors">
                                     <div className="text-3xl text-violet-500/60 font-mono">☽</div>
                                     <h4 className="font-bold text-white uppercase tracking-widest text-sm">Pattern Archetype</h4>
                                     <p className="text-xs text-slate-500 leading-relaxed">
-                                        Your Sigil represents a behavioral archetype derived from how your body patterns
+                                        Your Lumen represents a behavioral archetype derived from how your body patterns
                                         express themselves: timing, intensity, consistency, and recovery dynamics.
                                     </p>
                                 </div>
@@ -1393,7 +1400,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     <div className="text-3xl text-violet-500/60 font-mono">◇</div>
                                     <h4 className="font-bold text-white uppercase tracking-widest text-sm">Compatibility Language</h4>
                                     <p className="text-xs text-slate-500 leading-relaxed">
-                                        Sigils give you a shared language for discussing alignment between partners. They
+                                        Lumen gives you a shared language for discussing alignment between partners. They
                                         enable meaningful conversation without clinical exposure or awkward specificity.
                                     </p>
                                 </div>
@@ -1401,15 +1408,15 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     <div className="text-3xl text-violet-500/60 font-mono">⬡</div>
                                     <h4 className="font-bold text-white uppercase tracking-widest text-sm">Evolving Identity</h4>
                                     <p className="text-xs text-slate-500 leading-relaxed">
-                                        Unlike static zodiac signs, Sigils evolve with you. They reflect changes in health,
-                                        lifestyle, and physiology over time. Your Sigil is a living symbol.
+                                        Unlike static zodiac signs, Lumen evolves with you. They reflect changes in health,
+                                        lifestyle, and physiology over time. Your Lumen is a living symbol.
                                     </p>
                                 </div>
                             </div>
 
-                            {/* What Sigils Capture */}
+                            {/* What Lumen Captures */}
                             <div className="space-y-8">
-                                <h4 className="text-xs font-black uppercase tracking-[0.4em] text-violet-500/80">What Your Sigil Represents</h4>
+                                <h4 className="text-xs font-black uppercase tracking-[0.4em] text-violet-500/80">What Your Lumen Represents</h4>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                     {[
                                         { label: 'Response Timing', desc: 'How quickly and consistently you respond' },
@@ -1431,8 +1438,8 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 <div className="space-y-2">
                                     <p className="text-sm text-slate-300 font-medium">Privacy First, Always</p>
                                     <p className="text-xs text-slate-500 leading-relaxed">
-                                        Sigils communicate meaning through abstract symbolism. No raw data, no explicit imagery,
-                                        no anatomical details. Only you control when and with whom your Sigil is shared.
+                                        Lumen communicates meaning through abstract symbolism. No raw data, no explicit imagery,
+                                        no anatomical details. Only you control when and with whom your Lumen is shared.
                                     </p>
                                 </div>
                             </div>
@@ -1456,12 +1463,12 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                                     <div className="grid md:grid-cols-2 gap-16 pt-4">
                                         <p className="text-xl text-slate-300 leading-relaxed font-medium">
-                                            Nexalis users will have a Harmony Profile—a private, user-owned profile that summarizes
-                                            their relational physiology in a simple, readable format.
+                                            The Harmony Profile architecture is designed for portability, allowing users to securely
+                                            reference their relational physiological signatures across the digital ecosystem.
                                         </p>
                                         <p className="text-base text-slate-400 leading-relaxed">
-                                            Each Harmony Profile includes a Nexalis Sigil, a visual identifier that represents the
-                                            user's unique pattern set without revealing raw data.
+                                            Each profile is anchored by a Nexalis Sigil—a high-resolution visual identifier that
+                                            summarizes complex pattern sets while maintaining zero-linkage to raw anatomical data.
                                         </p>
                                     </div>
                                 </div>
@@ -1469,9 +1476,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
 
                             {/* How It Connects */}
                             <div className="space-y-8">
-                                <h4 className="text-xs font-black uppercase tracking-[0.4em] text-pink-500/80">How It Connects to the Outside World</h4>
+                                <h4 className="text-xs font-black uppercase tracking-[0.4em] text-pink-500/80">Ecosystem Integration</h4>
                                 <p className="text-lg text-slate-300 max-w-3xl">
-                                    We're building Harmony Profiles to be portable. That means you can share them anywhere you connect with other people.
+                                    Harmony Profiles are engineered for selective disclosure, enabling users to verify
+                                    physiological alignment within established relationship platforms.
                                 </p>
                             </div>
 
@@ -1573,9 +1581,9 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                     </div>
 
                                     <p className="text-xl text-slate-300 leading-relaxed font-medium max-w-4xl">
-                                        Nexalis will include a simple, in-app matching experience designed around Harmony Profiles.
-                                        Instead of relying only on photos and surface preferences, Nexalis introduces a new layer:
-                                        <span className="text-amber-400"> alignment intelligence</span>, a private, consent-based signal of how two people may actually fit in real life.
+                                        Nexalis Connect integrates a secure matching architecture centered on Harmony Profiles.
+                                        Beyond surface-level markers, Connect introduces <span className="text-amber-400">alignment intelligence</span>—a
+                                        private, consent-driven signal of real-world structural and physiological compatibility.
                                     </p>
                                 </div>
                             </div>
@@ -1644,6 +1652,78 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             <div className="text-xs text-slate-400 leading-relaxed">{item}</div>
                                         </div>
                                     ))}
+                                </div>
+                            </div>
+
+                            {/* Vow™ Section - Distinct Feature Block */}
+                            <div className="relative mt-16 mb-16">
+                                {/* Visual Separator */}
+                                <div className="absolute -top-8 left-1/2 -translate-x-1/2 flex items-center gap-4">
+                                    <div className="w-16 h-px bg-gradient-to-r from-transparent to-amber-500/50" />
+                                    <div className="w-3 h-3 rotate-45 border border-amber-500/50 bg-amber-500/10" />
+                                    <div className="w-16 h-px bg-gradient-to-l from-transparent to-amber-500/50" />
+                                </div>
+
+                                {/* Main Vow Container */}
+                                <div className="relative p-10 border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/[0.08] to-transparent rounded-lg overflow-hidden">
+                                    {/* Background Glow */}
+                                    <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 blur-[100px] pointer-events-none" />
+                                    <div className="absolute bottom-0 left-0 w-60 h-60 bg-amber-400/5 blur-[80px] pointer-events-none" />
+
+                                    <div className="relative z-10 space-y-8">
+                                        {/* Large Title */}
+                                        <div className="text-center space-y-4">
+                                            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30">
+                                                <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                                                <span className="text-xs font-black uppercase tracking-[0.3em] text-amber-400">Highest Alignment Designation</span>
+                                            </div>
+                                            <h3 className="text-5xl md:text-6xl font-black text-white tracking-tight">Vow™</h3>
+                                            <p className="text-xl text-amber-200/80 font-medium max-w-2xl mx-auto">
+                                                The absolute peak of biological resonance. More than a match—it’s a Vow™.
+                                            </p>
+                                        </div>
+
+                                        <p className="text-base text-slate-400 leading-relaxed text-center max-w-3xl mx-auto">
+                                            When two Harmony Profiles are compared, Nexalis evaluates synchrony across core variables and assigns a match tier. Only pairings that meet the top confidence threshold earn the Vow™ label.
+                                        </p>
+
+                                        {/* What a Vow Represents */}
+                                        <div className="space-y-6 pt-4">
+                                            <h5 className="text-sm font-bold text-amber-300 uppercase tracking-widest text-center">What a Vow™ represents</h5>
+                                            <div className="grid md:grid-cols-3 gap-6">
+                                                <div className="p-6 border border-amber-500/30 bg-black/40 backdrop-blur space-y-3 text-center">
+                                                    <div className="text-3xl mb-2">◈</div>
+                                                    <div className="text-lg font-bold text-white">Top-tier Synchrony</div>
+                                                    <div className="text-sm text-slate-400">The highest combined alignment score across key pattern variables</div>
+                                                </div>
+                                                <div className="p-6 border border-amber-500/30 bg-black/40 backdrop-blur space-y-3 text-center">
+                                                    <div className="text-3xl mb-2">◇</div>
+                                                    <div className="text-lg font-bold text-white">High Stability</div>
+                                                    <div className="text-sm text-slate-400">Consistent alignment over time, not a one-moment spike</div>
+                                                </div>
+                                                <div className="p-6 border border-amber-500/30 bg-black/40 backdrop-blur space-y-3 text-center">
+                                                    <div className="text-3xl mb-2">◆</div>
+                                                    <div className="text-lg font-bold text-white">Low Mismatch Risk</div>
+                                                    <div className="text-sm text-slate-400">Minimal conflict signals across the variables Nexalis tracks</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Why It Matters */}
+                                        <div className="p-8 bg-amber-500/[0.05] border border-amber-500/20 rounded space-y-4 text-center">
+                                            <h5 className="text-sm font-bold text-amber-300 uppercase tracking-widest">Why it matters</h5>
+                                            <p className="text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto">
+                                                A Vow™ is a fast, privacy-preserving way to recognize a rare match — without exposing explicit data. It's not a promise of love or a personality verdict. It's simply the strongest measurable alignment Nexalis can detect between two evolving physiological profiles.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Visual Separator */}
+                                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4">
+                                    <div className="w-16 h-px bg-gradient-to-r from-transparent to-amber-500/50" />
+                                    <div className="w-3 h-3 rotate-45 border border-amber-500/50 bg-amber-500/10" />
+                                    <div className="w-16 h-px bg-gradient-to-l from-transparent to-amber-500/50" />
                                 </div>
                             </div>
 

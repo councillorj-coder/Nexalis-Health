@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 type TabKey = 'overview' | 'specs' | 'reference';
 
-const EngineeringAxis: React.FC = () => {
+const EngineeringCompass: React.FC = () => {
     const [activeTab, setActiveTab] = useState<TabKey>('overview');
 
     return (
@@ -12,7 +12,7 @@ const EngineeringAxis: React.FC = () => {
             <div className="flex-none border-b border-white/10 p-6 flex items-center justify-between bg-[#080808]">
                 <div>
                     <h2 className="text-3xl font-black uppercase tracking-tight flex items-center gap-4">
-                        <span className="text-emerald-500">Node 01:</span> Axis™
+                        <span className="text-emerald-500">Node 05:</span> Compass™
                     </h2>
                     <p className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1 pl-1">Systemic Context Node</p>
                 </div>
@@ -60,7 +60,7 @@ const EngineeringAxis: React.FC = () => {
                                         Systemic context node for longitudinal health interpretation.
                                     </h3>
                                     <p className="text-lg text-slate-400 leading-relaxed">
-                                        Axis™ is the context anchor for the Nexalis system. It captures whole-body signals—cardiovascular load, recovery state, autonomic balance, and daily rhythm—so intimate-region markers can be interpreted with clarity. Axis™ converts “what happened to the body” into context, allowing both consumer and clinical insights to separate signal from noise.
+                                        Compass™ is the context anchor for the Nexalis system. It captures whole-body signals—cardiovascular load, recovery state, autonomic balance, and daily rhythm—so intimate-region markers can be interpreted with clarity. Compass™ converts “what happened to the body” into context, allowing both consumer and clinical insights to separate signal from noise.
                                     </p>
                                     <div className="pt-4 flex flex-wrap gap-4 text-xs text-slate-500 uppercase tracking-widest font-mono">
                                         <span className="px-3 py-1 border border-white/10 rounded">Context Anchor</span>
@@ -79,8 +79,8 @@ const EngineeringAxis: React.FC = () => {
                                         }}
                                     >
                                         <img
-                                            src={`${import.meta.env.BASE_URL}axis-realistic.png?v=2`}
-                                            alt="Axis Product"
+                                            src={`${import.meta.env.BASE_URL}compass-realistic.png?v=2`}
+                                            alt="Compass Product"
                                             className="max-w-full h-[300px] object-contain opacity-100"
                                         />
                                     </div>
@@ -91,7 +91,7 @@ const EngineeringAxis: React.FC = () => {
                             <section className="space-y-6 pt-12 border-t border-white/5">
                                 <h3 className="text-2xl font-black text-white">Why This Exists</h3>
                                 <p className="text-base text-slate-400 leading-relaxed max-w-4xl">
-                                    Intimate-region physiology is highly sensitive to systemic context: sleep quality, stress load, medication timing, hydration, inflammation, exertion, and recovery. Without context, even accurate local sensing can be misread. Axis™ provides a stable reference layer that helps the Nexalis Health Intelligence Engine attribute changes correctly—distinguishing true physiologic shifts from temporary context effects.
+                                    Intimate-region physiology is highly sensitive to systemic context: sleep quality, stress load, medication timing, hydration, inflammation, exertion, and recovery. Without context, even accurate local sensing can be misread. Compass™ provides a stable reference layer that helps the Nexalis Health Intelligence Engine attribute changes correctly—distinguishing true physiologic shifts from temporary context effects.
                                 </p>
                             </section>
 
@@ -206,7 +206,7 @@ const EngineeringAxis: React.FC = () => {
                             <section className="space-y-4">
                                 <h3 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 border-b border-white/5 pb-2">01. System Definition</h3>
                                 <p className="text-lg text-slate-300 leading-relaxed font-light font-mono text-sm">
-                                    Axis™ is a small-form, all-day wearable designed to deliver high-consistency systemic context for the Nexalis ecosystem. It prioritizes reliable resting-state and sleep-state signal capture, low power consumption, and data abstraction.
+                                    Compass™ is a small-form, all-day wearable designed to deliver high-consistency systemic context for the Nexalis ecosystem. It prioritizes reliable resting-state and sleep-state signal capture, low power consumption, and data abstraction.
                                 </p>
                             </section>
 
@@ -215,7 +215,7 @@ const EngineeringAxis: React.FC = () => {
                                 <h3 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 border-b border-white/5 pb-2">02. Form Factor Options</h3>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="p-4 border border-white/10 bg-white/[0.02]">
-                                        <h4 className="text-sm font-bold text-white mb-2">A) Ring Axis (Default)</h4>
+                                        <h4 className="text-sm font-bold text-white mb-2">A) Ring Compass (Default)</h4>
                                         <ul className="text-xs text-slate-400 space-y-1 font-mono">
                                             <li>• Highest wear adherence</li>
                                             <li>• Strong sleep-state signal fidelity</li>
@@ -223,7 +223,7 @@ const EngineeringAxis: React.FC = () => {
                                         </ul>
                                     </div>
                                     <div className="p-4 border border-white/10 bg-white/[0.02]">
-                                        <h4 className="text-sm font-bold text-white mb-2">B) Over-the-Heart Axis (Clinical)</h4>
+                                        <h4 className="text-sm font-bold text-white mb-2">B) Over-the-Heart Compass (Clinical)</h4>
                                         <ul className="text-xs text-slate-400 space-y-1 font-mono">
                                             <li>• Higher-fidelity cardiac timing (ECG-grade)</li>
                                             <li>• More robust during exertion</li>
@@ -365,4 +365,4 @@ const EngineeringAxis: React.FC = () => {
     );
 };
 
-export default EngineeringAxis;
+export default EngineeringCompass;
