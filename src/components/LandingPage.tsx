@@ -1,28 +1,22 @@
 import { useMemo, useState } from 'react'
 import NexalisLogo from './NexalisLogo'
+import { nodes } from '../data/engineering-data'
 
 export default function LandingPage(props: {
     onEnterOverview: () => void;
-    engineeringPassword: string;
     onEnterEngineering: () => void;
-
+    onNodeClick: (nodeId: string) => void;
 }) {
-    const [showEngineeringGate, setShowEngineeringGate] = useState(false)
-    const [password, setPassword] = useState('')
     const [error, setError] = useState<string | null>(null)
 
-    const normalizedExpected = useMemo(() => props.engineeringPassword.trim(), [props.engineeringPassword])
 
-    const tryEnterEngineering = () => {
-        if (password.trim() === normalizedExpected) {
-            setError(null)
-            setShowEngineeringGate(false)
-            setPassword('')
-            props.onEnterEngineering()
-            return
-        }
-        setError('Incorrect password')
+    const statusColors: Record<string, { bg: string; text: string; border: string }> = {
+        Stable: { bg: 'bg-emerald-500/15', text: 'text-emerald-400', border: 'border-emerald-500/25' },
+        Beta: { bg: 'bg-blue-500/15', text: 'text-blue-400', border: 'border-blue-500/25' },
+        Dev: { bg: 'bg-amber-500/15', text: 'text-amber-400', border: 'border-amber-500/25' },
+        Concept: { bg: 'bg-slate-500/15', text: 'text-slate-400', border: 'border-slate-500/25' },
     }
+
     return (
         <div className="min-h-screen bg-black text-white selection:bg-blue-500/30 viewport-glow relative overflow-hidden">
 
@@ -34,75 +28,6 @@ export default function LandingPage(props: {
                     <span className="text-xl font-bold tracking-tighter">NEXALIS HEALTH</span>
                 </div>
             </nav>
-
-            {/* Engineering Gate (Client-side; temporary) */}
-            {showEngineeringGate ? (
-                <div className="fixed inset-0 z-[200] bg-black/70 backdrop-blur-sm flex items-center justify-center px-6">
-                    <div className="w-full max-w-md rounded-2xl border border-white/10 bg-black/80 shadow-2xl p-6">
-                        <div className="flex items-start justify-between gap-4">
-                            <div>
-                                <div className="text-sm font-semibold tracking-wide text-white/70">Restricted</div>
-                                <h2 className="mt-1 text-xl font-bold">Engineering Portal</h2>
-                                <p className="mt-1 text-sm text-slate-400">
-                                    Enter the portal password to continue.
-                                </p>
-                            </div>
-                            <button
-                                onClick={() => {
-                                    setShowEngineeringGate(false)
-                                    setPassword('')
-                                    setError(null)
-                                }}
-                                className="text-white/60 hover:text-white transition-colors"
-                                aria-label="Close"
-                            >
-                                ✕
-                            </button>
-                        </div>
-
-                        <div className="mt-5">
-                            <label className="text-xs font-semibold tracking-wide text-white/60">Password</label>
-                            <input
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                onKeyDown={(e) => {
-                                    if (e.key === 'Enter') tryEnterEngineering()
-                                }}
-                                type="password"
-                                className="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-white/25"
-                                placeholder="••••••••"
-                                autoFocus
-                            />
-                            {error ? (
-                                <div className="mt-2 text-sm text-rose-400">{error}</div>
-                            ) : (
-                                <div className="mt-2 text-xs text-slate-500">
-                                    This is a temporary gate for early sharing.
-                                </div>
-                            )}
-                        </div>
-
-                        <div className="mt-6 flex gap-3">
-                            <button
-                                onClick={() => {
-                                    setShowEngineeringGate(false)
-                                    setPassword('')
-                                    setError(null)
-                                }}
-                                className="flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/80 hover:bg-white/10 transition-colors"
-                            >
-                                Cancel
-                            </button>
-                            <button
-                                onClick={tryEnterEngineering}
-                                className="flex-1 rounded-xl bg-white px-4 py-3 text-sm font-bold text-black hover:scale-[1.01] transition-transform"
-                            >
-                                Enter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            ) : null}
 
             {/* Hero Section */}
             <section className="relative pt-44 pb-32 px-6 flex flex-col items-center text-center max-w-5xl mx-auto">
@@ -219,31 +144,103 @@ export default function LandingPage(props: {
                     <div className="relative z-10 flex flex-col sm:flex-row gap-3 items-stretch">
                         <button
                             onClick={props.onEnterOverview}
-                            className="group px-8 py-4 rounded-xl bg-white text-black font-bold text-lg hover:scale-[1.01] transition-transform shadow-xl text-left"
+                            className="group px-8 py-4 rounded-xl bg-white text-black font-bold text-lg hover:scale-[1.01] transition-transform shadow-xl flex items-center justify-center min-w-[240px]"
                         >
-                            <div className="text-lg leading-none">Project Overview</div>
-                            <div className="mt-1 text-xs font-semibold tracking-wide text-black/60">Investors • Doctors</div>
+                            Project Overview
                         </button>
                         <button
-                            onClick={() => {
-                                setError(null)
-                                setShowEngineeringGate(true)
-                            }}
+                            onClick={props.onEnterEngineering}
                             className="group px-8 py-4 rounded-xl border border-white/20 bg-white/5 backdrop-blur-xl text-white font-bold text-lg hover:bg-white/10 hover:border-white/40 transition-colors shadow-xl text-left"
                         >
                             <div className="text-lg leading-none">Engineering Portal</div>
-                            <div className="mt-1 text-xs font-semibold tracking-wide text-white/60">Password required</div>
+                            <div className="mt-1 text-xs font-semibold tracking-wide text-white/60">System Context</div>
                         </button>
                     </div>
                 </div>
             </section>
 
+            {/* Node Ecosystem Section */}
+            <section className="relative px-6 pb-32 max-w-6xl mx-auto">
+                <div className="text-center mb-16">
+                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.04] border border-white/[0.08] mb-6">
+                        <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+                        <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400">Node Ecosystem</span>
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white mb-4">Explore the System</h2>
+                    <p className="text-sm text-slate-500 max-w-lg mx-auto">Five precision devices. One unified intelligence platform.</p>
+                </div>
 
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {/* Male Category */}
+                    <div className="space-y-4">
+                        <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-500/60 mb-6 text-center">Male Physiology</h3>
+                        <div className="flex flex-col gap-4">
+                            {nodes.filter(n => n.category === 'Male').map((node, i) => {
+                                const sc = { bg: 'bg-blue-500/10', text: 'text-blue-400', border: 'border-blue-500/20', shadow: 'hover:shadow-blue-500/10' };
+                                return (
+                                    <button
+                                        key={node.id}
+                                        onClick={() => props.onNodeClick(node.id)}
+                                        className={`group relative text-left p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.05] hover:border-blue-500/30 transition-all duration-500 ${sc.shadow}`}
+                                    >
+                                        <div className={`inline-flex items-center px-2.5 py-1 rounded-full ${sc.bg} ${sc.border} border mb-4`}>
+                                            <span className={`text-[9px] font-bold uppercase tracking-[0.15em] ${sc.text}`}>{node.status}</span>
+                                        </div>
+                                        <h3 className="text-xl font-black tracking-tight text-white mb-2 group-hover:text-blue-300 transition-colors duration-300">{node.name}</h3>
+                                        <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">{node.tagline}</p>
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
 
+                    {/* Neutral Category */}
+                    <div className="space-y-4">
+                        <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-500/60 mb-6 text-center">Systemic Context</h3>
+                        <div className="flex flex-col gap-4">
+                            {nodes.filter(n => n.category === 'Neutral').map((node, i) => {
+                                const sc = { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/20', shadow: 'hover:shadow-emerald-500/10' };
+                                return (
+                                    <button
+                                        key={node.id}
+                                        onClick={() => props.onNodeClick(node.id)}
+                                        className={`group relative text-left p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.05] hover:border-emerald-500/30 transition-all duration-500 ${sc.shadow}`}
+                                    >
+                                        <div className={`inline-flex items-center px-2.5 py-1 rounded-full ${sc.bg} ${sc.border} border mb-4`}>
+                                            <span className={`text-[9px] font-bold uppercase tracking-[0.15em] ${sc.text}`}>{node.status}</span>
+                                        </div>
+                                        <h3 className="text-xl font-black tracking-tight text-white mb-2 group-hover:text-emerald-300 transition-colors duration-300">{node.name}</h3>
+                                        <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">{node.tagline}</p>
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
 
-
-
-
+                    {/* Female Category */}
+                    <div className="space-y-4">
+                        <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-rose-500/60 mb-6 text-center">Female Physiology</h3>
+                        <div className="flex flex-col gap-4">
+                            {nodes.filter(n => n.category === 'Female').map((node, i) => {
+                                const sc = { bg: 'bg-rose-500/10', text: 'text-rose-400', border: 'border-rose-500/20', shadow: 'hover:shadow-rose-500/10' };
+                                return (
+                                    <button
+                                        key={node.id}
+                                        onClick={() => props.onNodeClick(node.id)}
+                                        className={`group relative text-left p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.05] hover:border-rose-500/30 transition-all duration-500 ${sc.shadow}`}
+                                    >
+                                        <div className={`inline-flex items-center px-2.5 py-1 rounded-full ${sc.bg} ${sc.border} border mb-4`}>
+                                            <span className={`text-[9px] font-bold uppercase tracking-[0.15em] ${sc.text}`}>{node.status}</span>
+                                        </div>
+                                        <h3 className="text-xl font-black tracking-tight text-white mb-2 group-hover:text-rose-300 transition-colors duration-300">{node.name}</h3>
+                                        <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">{node.tagline}</p>
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             {/* Footer Branding */}

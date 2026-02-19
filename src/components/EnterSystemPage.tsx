@@ -178,12 +178,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
             <main className={`transition-all duration-500 ease-out cubic-bezier(0.16, 1, 0.3, 1) ${selectedNode ? 'pl-[420px] opacity-40 grayscale-[0.5]' : 'pl-20'
                 }`}>
 
-                {/* Navigation (Top Right only now) */}
-                <nav className="fixed top-0 right-0 z-50 p-6 flex justify-end items-center">
-                    <span className="text-sm font-medium uppercase tracking-widest text-slate-400 bg-black/50 backdrop-blur px-4 py-2 rounded-full border border-white/10">
-                        System Interface
-                    </span>
-                </nav>
+
 
                 {/* Hero Section with Animation */}
                 <section className="relative min-h-screen flex flex-col items-center justify-center px-8 pt-20">
@@ -352,7 +347,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 1. Sentinel™
+                                            Sentinel™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}mantrix-wireframe.png`}
@@ -382,10 +377,10 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 4. Caliber™
+                                            Caliber™
                                         </text>
                                         <image
-                                            href={`${import.meta.env.BASE_URL}caliber-wireframe.png`}
+                                            href={`${import.meta.env.BASE_URL}caliber-wireframe-epic.png`}
                                             x="-48"
                                             y="258"
                                             width="96"
@@ -412,7 +407,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 5. Compass™
+                                            Compass™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}compass-wireframe.png`}
@@ -445,7 +440,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 2. Elaria™
+                                            Elaria™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}innersense-wireframe.png`}
@@ -475,7 +470,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 3. Meridia™
+                                            Meridia™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}meridia-wireframe.png`}
@@ -505,7 +500,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Node 5. Compass™
+                                            Compass™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}compass-wireframe.png`}

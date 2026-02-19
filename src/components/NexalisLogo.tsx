@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function NexalisLogo({ size = 56, className = "" }: { size?: number; className?: string }) {
+export default function NexalisLogo({ size = 56, className = "", dark = false }: { size?: number; className?: string; dark?: boolean }) {
     const [isHovered, setIsHovered] = useState(false)
 
     return (
@@ -56,7 +56,9 @@ export default function NexalisLogo({ size = 56, className = "" }: { size?: numb
                 viewBox="0 0 100 100"
                 className="overflow-visible"
                 style={{
-                    filter: isHovered ? 'drop-shadow(0 0 20px rgba(255,255,255,0.4))' : 'drop-shadow(0 0 5px rgba(255,255,255,0.1))',
+                    filter: isHovered
+                        ? (dark ? 'drop-shadow(0 0 15px rgba(0,0,0,0.2))' : 'drop-shadow(0 0 20px rgba(255,255,255,0.4))')
+                        : (dark ? 'none' : 'drop-shadow(0 0 5px rgba(255,255,255,0.1))'),
                     transition: 'filter 6s ease-in-out'
                 }}
             >
@@ -89,7 +91,7 @@ export default function NexalisLogo({ size = 56, className = "" }: { size?: numb
                             fill="url(#staticGradA)"
                             style={{ mixBlendMode: 'screen', opacity: 0.6 }}
                         />
-                        <path d="M48 5 L68 50 L48 95" stroke="white" strokeWidth="0.5" fill="none" opacity="0.4" />
+                        <path d="M48 5 L68 50 L48 95" stroke={dark ? "rgba(0,0,0,0.2)" : "white"} strokeWidth="0.5" fill="none" opacity="0.4" />
                     </g>
                 </g>
 
@@ -109,7 +111,7 @@ export default function NexalisLogo({ size = 56, className = "" }: { size?: numb
                             fill="url(#staticGradB)"
                             style={{ mixBlendMode: 'screen', opacity: 0.6 }}
                         />
-                        <path d="M52 5 L32 50 L52 95" stroke="white" strokeWidth="0.5" fill="none" opacity="0.4" />
+                        <path d="M52 5 L32 50 L52 95" stroke={dark ? "rgba(0,0,0,0.2)" : "white"} strokeWidth="0.5" fill="none" opacity="0.4" />
                     </g>
                 </g>
 
@@ -124,8 +126,8 @@ export default function NexalisLogo({ size = 56, className = "" }: { size?: numb
                     {/* The Child (Central White Diamond) */}
                     <path
                         d="M50 42 L54 50 L50 58 L46 50 Z"
-                        fill="white"
-                        style={{ filter: 'drop-shadow(0 0 15px white)' }}
+                        fill={dark ? "#0F172A" : "white"}
+                        style={{ filter: dark ? 'none' : 'drop-shadow(0 0 15px white)' }}
                     />
                 </g>
             </svg>
