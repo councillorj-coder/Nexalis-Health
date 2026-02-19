@@ -1,6 +1,23 @@
 import React from 'react';
 import meridiaSchematic from '../assets/meridia-internal-schematic.png';
 
+interface MaterialLink {
+    label: string;
+    url: string;
+}
+
+interface MaterialSection {
+    subCategory: string;
+    items: MaterialLink[];
+}
+
+interface MaterialItem {
+    label: string;
+    subCategory?: string;
+    value?: (string | MaterialLink)[];
+    sections?: MaterialSection[];
+}
+
 const EngineeringMeridia: React.FC = () => {
     const [showTechSheet, setShowTechSheet] = React.useState(false);
 
@@ -12,6 +29,41 @@ const EngineeringMeridia: React.FC = () => {
         { label: "Feedback Loop", value: "Real-time Compliance Indexing" },
         { label: "Material", value: "Medical Grade Silicone (Shore 00-30)" },
         { label: "Connection", value: "BLE 5.2 (Encrypted)" }
+    ];
+
+    const materialsData: MaterialItem[] = [
+        {
+            label: "Distance Sensing Tip",
+            subCategory: "Ultrasound",
+            value: ["TBD"]
+        },
+        {
+            label: "Inflation System",
+            sections: [
+                {
+                    subCategory: "Pump",
+                    items: [
+                        { label: "cheap digikey option", url: "https://www.digikey.com/en/products/detail/dfrobot/FIT0801/14824994" },
+                        { label: "CurieJet High End", url: "https://www.curiejet.com/en/product/micro-pump/air-pump-and-micro-blower" },
+                        { label: "LeeCo smart pump module", url: "https://www.theleeco.com/product/smart-pump-module/#part-numbers-specifications" }
+                    ]
+                },
+                {
+                    subCategory: "mems psi sensor",
+                    items: [
+                        { label: "TE 2PSI", url: "https://www.digikey.com/en/products/detail/te-connectivity-measurement-specialties/4525DO-DS3BS002GPF/28735279?s=N4IgTCBcDaICoFEAEBhA9gOwwUwMYBcBLAN0PwE8kBZbAQwGcBXAJ2wFtsN8kBlABzyFaAGyLZ6SACwBWMNIAiAeQC08ngGYAQjwAMOsAHEACgDEQAXQC%2BQA" }
+                    ]
+                }
+            ]
+        },
+        {
+            label: "Sensing Suite",
+            value: ["FSR Array / IR ToF"]
+        },
+        {
+            label: "Electronics",
+            value: ["BLE 5.2 / NTC / IMU"]
+        }
     ];
 
     return (
@@ -320,40 +372,7 @@ const EngineeringMeridia: React.FC = () => {
                                 <div className="mt-12">
                                     <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-8 text-center">Materials List (v1) // Secure Baseline</h4>
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                                        {[
-                                            {
-                                                label: "Distance Sensing Tip",
-                                                subCategory: "Ultrasound",
-                                                value: ["TBD"]
-                                            },
-                                            {
-                                                label: "Inflation System",
-                                                sections: [
-                                                    {
-                                                        subCategory: "Pump",
-                                                        items: [
-                                                            { label: "cheap digikey option", url: "https://www.digikey.com/en/products/detail/dfrobot/FIT0801/14824994" },
-                                                            { label: "CurieJet High End", url: "https://www.curiejet.com/en/product/micro-pump/air-pump-and-micro-blower" },
-                                                            { label: "LeeCo smart pump module", url: "https://www.theleeco.com/product/smart-pump-module/#part-numbers-specifications" }
-                                                        ]
-                                                    },
-                                                    {
-                                                        subCategory: "mems psi sensor",
-                                                        items: [
-                                                            { label: "TE 2PSI", url: "https://www.digikey.com/en/products/detail/te-connectivity-measurement-specialties/4525DO-DS3BS002GPF/28735279?s=N4IgTCBcDaICoFEAEBhA9gOwwUwMYBcBLAN0PwE8kBZbAQwGcBXAJ2wFtsN8kBlABzyFaAGyLZ6SACwBWMNIAiAeQC08ngGYAQjwAMOsAHEACgDEQAXQC%2BQA" }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                label: "Sensing Suite",
-                                                value: ["FSR Array / IR ToF"]
-                                            },
-                                            {
-                                                label: "Electronics",
-                                                value: ["BLE 5.2 / NTC / IMU"]
-                                            }
-                                        ].map((item, i) => (
+                                        {materialsData.map((item, i) => (
                                             <div key={i} className="flex flex-col items-center text-center">
                                                 <span className="text-[9px] uppercase tracking-widest text-slate-400 font-bold mb-2">{item.label}</span>
 
@@ -388,7 +407,7 @@ const EngineeringMeridia: React.FC = () => {
                                                             </span>
                                                         )}
                                                         <div className="font-mono text-sm text-slate-900 font-black border-t-2 border-[#B76E79] pt-2 w-full flex flex-col gap-1">
-                                                            {item.value.map((v, j) => (
+                                                            {item.value?.map((v, j) => (
                                                                 typeof v === 'string' ? (
                                                                     <span key={j}>{v}</span>
                                                                 ) : (
