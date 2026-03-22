@@ -5,6 +5,7 @@ import EnterSystemPage from './components/EnterSystemPage'
 import EngineeringPortal from './components/EngineeringPortal'
 import NodePage from './components/nodes/NodePage'
 import MarketingPage from './components/MarketingPage'
+import DownLowBrandPage from './components/DownLowBrandPage'
 
 function AppRoutes() {
   const navigate = useNavigate()
@@ -23,6 +24,7 @@ function AppRoutes() {
             onEnterOverview={() => navigate('/enter-system')}
             onEnterEngineering={() => navigate('/engineering')}
             onNodeClick={(nodeId: string) => navigate(`/product/${nodeId}`)}
+            onEnterDownLow={() => navigate('/downlow')}
           />
         }
       />
@@ -61,6 +63,10 @@ function AppRoutes() {
       <Route
         path="/engineering/*"
         element={<EngineeringPortal />}
+      />
+      <Route
+        path="/downlow"
+        element={<DownLowBrandPage onBack={() => navigate('/')} />}
       />
     </Routes>
   )

@@ -6,6 +6,7 @@ export default function LandingPage(props: {
     onEnterOverview: () => void;
     onEnterEngineering: () => void;
     onNodeClick: (nodeId: string) => void;
+    onEnterDownLow: () => void;
 }) {
     const [error, setError] = useState<string | null>(null)
 
@@ -19,6 +20,15 @@ export default function LandingPage(props: {
 
     return (
         <div className="min-h-screen bg-black text-white selection:bg-blue-500/30 viewport-glow relative overflow-hidden">
+
+            {/* Down Low Studio — Fixed Left Side Button (Logo Only) */}
+            <button
+                onClick={props.onEnterDownLow}
+                className="fixed bottom-8 left-8 z-50 group bg-transparent border-none transition-all duration-300 hover:scale-105 active:scale-95 w-48 h-16 overflow-hidden"
+                title="Down Low Studio"
+            >
+                <img src="/downlow-studio-logo-white.png" alt="Down Low Studio" className="w-full scale-[2.5] object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-2xl" />
+            </button>
 
 
             {/* Navigation */}
@@ -155,6 +165,7 @@ export default function LandingPage(props: {
                             <div className="text-lg leading-none">Engineering Portal</div>
                             <div className="mt-1 text-xs font-semibold tracking-wide text-white/60">System Context</div>
                         </button>
+
                     </div>
                 </div>
             </section>
