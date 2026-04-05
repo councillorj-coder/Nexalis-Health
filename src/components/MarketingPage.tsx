@@ -141,7 +141,7 @@ export default function MarketingPage({ onBack, onViewEngineering }: MarketingPa
                     </div>
 
                     <button
-                        onClick={() => onViewEngineering(product.id === 'mantrix' ? 'sentinel' : product.id)}
+                        onClick={() => onViewEngineering(product.id === 'mantrix' ? 'cinder' : product.id)}
                         className={`group relative inline-flex items-center gap-4 p-1 pr-8 rounded-full border transition-all duration-500 ${bridgeTheme}`}
                     >
                         <span className={`w-12 h-12 rounded-full ${bridgeInvert} flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform`}>

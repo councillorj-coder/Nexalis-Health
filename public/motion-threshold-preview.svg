@@ -1,0 +1,24 @@
+<svg width="768" height="768" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="motion-threshold" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="lum" />
+      <feComponentTransfer in="lum" result="cut">
+        <feFuncA type="table" tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0.35 1 1 1" />
+      </feComponentTransfer>
+    </filter>
+    <mask id="motion-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="768" height="768">
+      <image
+        href="./session-category-logos/motion.png"
+        x="0"
+        y="0"
+        width="768"
+        height="768"
+        preserveAspectRatio="xMidYMid meet"
+        filter="url(#motion-threshold)"
+      />
+    </mask>
+  </defs>
+
+  <rect width="768" height="768" fill="#000000" />
+  <rect width="768" height="768" fill="#F5F8FC" mask="url(#motion-mask)" />
+</svg>

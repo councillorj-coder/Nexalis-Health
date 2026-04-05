@@ -6,6 +6,7 @@ import EngineeringPortal from './components/EngineeringPortal'
 import NodePage from './components/nodes/NodePage'
 import MarketingPage from './components/MarketingPage'
 import DownLowBrandPage from './components/DownLowBrandPage'
+import ArcSimulationPage from './components/ArcSimulationPage'
 
 function AppRoutes() {
   const navigate = useNavigate()
@@ -25,6 +26,7 @@ function AppRoutes() {
             onEnterEngineering={() => navigate('/engineering')}
             onNodeClick={(nodeId: string) => navigate(`/product/${nodeId}`)}
             onEnterDownLow={() => navigate('/downlow')}
+            onEnterArc={() => navigate('/arc')}
           />
         }
       />
@@ -33,7 +35,7 @@ function AppRoutes() {
         element={<EnterSystemPage onBack={() => navigate('/')} />}
       />
       <Route
-        path="/sentinel"
+        path="/cinder"
         element={<SentinelPage onBack={() => navigate('/')} />}
       />
       <Route
@@ -67,6 +69,10 @@ function AppRoutes() {
       <Route
         path="/downlow"
         element={<DownLowBrandPage onBack={() => navigate('/')} />}
+      />
+      <Route
+        path="/arc"
+        element={<ArcSimulationPage onBack={() => navigate('/')} />}
       />
     </Routes>
   )

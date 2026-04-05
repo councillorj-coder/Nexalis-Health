@@ -14,7 +14,7 @@ const EngineeringNodesHub: React.FC = () => {
 
     // Determine active node from URL or default to compass
     const getActiveNodeFromPath = () => {
-        if (location.pathname.includes('/mantrix')) return 'mantrix';
+        if (location.pathname.includes('/mantrix') || location.pathname.includes('/cinder')) return 'mantrix';
         if (location.pathname.includes('/innersense')) return 'innersense';
         if (location.pathname.includes('/meridia')) return 'meridia';
         if (location.pathname.includes('/caliber')) return 'caliber';
@@ -25,7 +25,7 @@ const EngineeringNodesHub: React.FC = () => {
 
     const nodes = [
         { key: 'compass', label: 'Compass', color: 'border-emerald-500/50' },
-        { key: 'mantrix', label: 'Sentinel™', color: 'border-emerald-500/50' },
+        { key: 'mantrix', label: 'Cinder™', color: 'border-emerald-500/50' },
         { key: 'innersense', label: 'Elaria', color: 'border-emerald-500/50' },
         { key: 'meridia', label: 'Meridia™', color: 'border-emerald-500/50' },
         { key: 'caliber', label: 'Caliber™', color: 'border-emerald-500/50' },

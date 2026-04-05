@@ -38,7 +38,7 @@ export interface Issue {
 export const buildFocus = {
   sprint: 'Sprint 24.08',
   targets: [
-    'Sentinel™ v0.9 Firmware Handover',
+    'Cinder™ v0.9 Firmware Handover',
     'Data Pipeline Sample Rate Optimization (100Hz -> 60Hz)',
     'BLE Connection Stability Patch'
   ],
@@ -64,7 +64,7 @@ export const architectureNodes = [
 export const nodes: NodeStatus[] = [
   {
     id: 'mantrix',
-    name: 'Sentinel™',
+        name: 'Cinder™',
     status: 'Beta',
     category: 'Male',
     domains: ['Structural Stability', 'Circulation Response', 'Thermal Context', 'Variability Patterns'],

@@ -18,7 +18,7 @@ export default function EngineeringPortal() {
     const navItems = [
         { label: 'MERIDIA™', path: '/engineering/meridia', color: 'bg-rose-500', shadow: 'shadow-rose-500/50', status: 'CRITICAL' },
         { label: 'CALIBER™', path: '/engineering/caliber', color: 'bg-blue-500', shadow: 'shadow-blue-500/50', status: 'ACTIVE' },
-        { label: 'SENTINEL™', path: '/engineering/mantrix', color: 'bg-emerald-500', shadow: 'shadow-emerald-500/50', status: 'STABLE' },
+        { label: 'CINDER™', path: '/engineering/cinder', color: 'bg-emerald-500', shadow: 'shadow-emerald-500/50', status: 'STABLE' },
         { label: 'ELARIA™', path: '/engineering/innersense', color: 'bg-slate-500', shadow: 'shadow-white/20', status: 'QUEUE' },
         { label: 'COMPASS™', path: '/engineering/compass', color: 'bg-slate-600', shadow: 'shadow-white/20', status: 'QUEUE' },
         { label: 'App Interface', path: '/engineering/appui', color: 'bg-amber-500', shadow: 'shadow-amber-500/50', status: 'UTILITY' },
@@ -122,11 +122,11 @@ export default function EngineeringPortal() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-8 group cursor-pointer opacity-80 hover:opacity-100 transition-opacity" onClick={() => navigate('/engineering/mantrix')}>
+                                    <div className="flex items-center gap-8 group cursor-pointer opacity-80 hover:opacity-100 transition-opacity" onClick={() => navigate('/engineering/cinder')}>
                                         <span className="text-5xl font-semibold text-emerald-500/30 group-hover:text-emerald-500 transition-colors">03</span>
                                         <div className="flex-1 border-b border-emerald-500/10 pb-2">
                                             <div className="flex justify-between items-end">
-                                                <span className="text-3xl font-semibold text-slate-400 group-hover:text-emerald-400 transition-colors">SENTINEL™</span>
+                                                <span className="text-3xl font-semibold text-slate-400 group-hover:text-emerald-400 transition-colors">CINDER™</span>
                                                 <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 font-bold uppercase tracking-widest mb-1">Stable</span>
                                             </div>
                                         </div>

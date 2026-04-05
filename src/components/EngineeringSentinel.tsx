@@ -14,7 +14,7 @@ const EngineeringSentinel: React.FC = () => {
             <div className="flex-none border-b border-white/10 p-4 md:p-6 flex items-center justify-between bg-black z-10">
                 <div>
                     <h2 className="text-xl md:text-3xl font-black uppercase tracking-tight flex items-center gap-2 md:gap-4 text-white">
-                        <span className="text-[#3B82F6]">Node 01:</span> Sentinel™
+                            <span className="text-[#3B82F6]">Node 01:</span> Cinder™
                     </h2>
                     <p className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mt-1 pl-1">Precision Sensing Architecture</p>
                 </div>
@@ -42,13 +42,13 @@ const EngineeringSentinel: React.FC = () => {
                         >
                             <img
                                 src={`${import.meta.env.BASE_URL}mantrix-product.png`}
-                                alt="Sentinel™ Architecture"
+                            alt="Cinder™ Architecture"
                                 className="relative z-10 w-full h-full object-contain mix-blend-lighten opacity-80"
                             />
                         </div>
 
                         <h1 className="text-4xl sm:text-6xl md:text-8xl font-black text-white tracking-tighter uppercase text-center">
-                            Sentinel™
+                            Cinder™
                         </h1>
                     </div>
 
@@ -58,12 +58,12 @@ const EngineeringSentinel: React.FC = () => {
                         {/* 1. Why Sentinel Exists */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-slate-300">
                             <div className="space-y-6">
-                                <h3 className="text-sm font-bold uppercase tracking-widest text-[#3B82F6]">Why Sentinel Exists</h3>
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-[#3B82F6]">Why Cinder Exists</h3>
                                 <p className="text-xl font-medium text-white leading-relaxed">
-                                    Sentinel captures continuous, real-world physiology using passive, non-invasive sensing to detect shifts in baseline health.
+                            Cinder captures continuous, real-world physiology using passive, non-invasive sensing to detect shifts in baseline health.
                                 </p>
                                 <p className="leading-relaxed text-sm">
-                                    Current clinical evaluations capture only isolated moments in artificial settings. Sentinel™ operates passively without user input, mapping long-term patterns in rigidity and stability that are otherwise invisible until they reach a symptomatic threshold.
+                            Current clinical evaluations capture only isolated moments in artificial settings. Cinder™ operates passively without user input, mapping long-term patterns in rigidity and stability that are otherwise invisible until they reach a symptomatic threshold.
                                 </p>
                                 <p className="leading-relaxed border-l-2 border-[#3B82F6] pl-4 italic text-slate-400 text-sm">
                                     "We provide the continuous data stream required for proactive physiological intelligence."
@@ -73,7 +73,7 @@ const EngineeringSentinel: React.FC = () => {
                             {/* 2. What It Measures */}
                             <div className="space-y-6 bg-white/5 p-8 rounded-xl border border-white/10">
                                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#3B82F6]">What It Measures</h3>
-                                <p className="text-slate-400 mb-4 text-sm">Sentinel generates high-resolution physiological indices:</p>
+                        <p className="text-slate-400 mb-4 text-sm">Cinder generates high-resolution physiological indices:</p>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <div className="h-1.5 w-1.5 rounded-full bg-[#3B82F6] mt-2.5 flex-none" />
@@ -239,7 +239,7 @@ const EngineeringSentinel: React.FC = () => {
                                         <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#3B82F6]">Restricted Access // Node 01</span>
                                     </div>
                                     <h3 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight">Technical Sheet</h3>
-                                    <p className="text-xs text-slate-500 font-mono mt-2 uppercase tracking-wide">NODE 01 // SENTINEL™ // HARDWARE BUILDS // METALLIC-BLUE</p>
+                    <p className="text-xs text-slate-500 font-mono mt-2 uppercase tracking-wide">NODE 01 // CINDER™ // HARDWARE BUILDS // METALLIC-BLUE</p>
                                 </div>
                                 <button
                                     onClick={() => setShowTechSheet(false)}
@@ -479,7 +479,7 @@ const EngineeringSentinel: React.FC = () => {
                                             <img
                                                 src={build1Schematic}
                                                 className="w-full h-auto max-h-[800px] object-contain mx-auto"
-                                                alt="Sentinel Build 1 Schematic"
+                            alt="Cinder Build 1 Schematic"
                                             />
                                         </div>
                                     </div>

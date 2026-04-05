@@ -7,6 +7,7 @@ export default function LandingPage(props: {
     onEnterEngineering: () => void;
     onNodeClick: (nodeId: string) => void;
     onEnterDownLow: () => void;
+    onEnterArc?: () => void;
 }) {
     const [error, setError] = useState<string | null>(null)
 
@@ -30,6 +31,13 @@ export default function LandingPage(props: {
                 <img src="/downlow-studio-logo-white.png" alt="Down Low Studio" className="w-full scale-[2.5] object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-2xl" />
             </button>
 
+            <button
+                onClick={props.onEnterArc}
+                className="fixed bottom-8 right-8 z-50 group bg-transparent border-none transition-all duration-300 hover:scale-105 active:scale-95 w-48 h-16 overflow-hidden flex items-center justify-end"
+                title="Cinder Simulation"
+            >
+                <img src="/roostlr-logo-white.png" alt="Cinder Simulation" className="h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-2xl" />
+            </button>
 
             {/* Navigation */}
             <nav className="absolute top-0 w-full z-50 px-6 py-8 flex justify-between items-center max-w-7xl mx-auto left-1/2 -translate-x-1/2">
@@ -266,7 +274,7 @@ export default function LandingPage(props: {
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
                         <div className="space-y-4">
                             <div className="font-bold">Ecosystem</div>
-                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Sentinel</div>
+                            <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Cinder</div>
                             <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Elaria</div>
                             <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Compass</div>
                             <div className="text-slate-500 hover:text-white cursor-pointer transition-colors">Caliber</div>

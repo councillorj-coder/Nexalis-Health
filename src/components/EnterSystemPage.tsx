@@ -347,7 +347,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                             fill="white" fontSize="8" fontWeight="600" letterSpacing="0.5"
                                             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                                         >
-                                            Sentinel™
+                                    Cinder™
                                         </text>
                                         <image
                                             href={`${import.meta.env.BASE_URL}mantrix-wireframe.png`}
@@ -915,7 +915,7 @@ export default function EnterSystemPage(props: { onBack: () => void }) {
                                 {/* Sentinel */}
                                 <div className="p-8 border border-white/10 bg-white/[0.02] space-y-4 hover:border-blue-500/30 transition-colors">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-xl font-bold text-white">Sentinel™</h3>
+                            <h3 className="text-xl font-bold text-white">Cinder™</h3>
                                         <span className="text-[10px] text-blue-500 font-black uppercase tracking-widest">Active</span>
                                     </div>
                                     <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Structural & Stability Node (Male)</p>
